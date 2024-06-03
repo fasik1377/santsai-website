@@ -25,62 +25,68 @@ html {
 
 .navigation_bar {
 
-    @include media-breakpoint-up(lg) {
-      .navscroll.scrolled {
-          background-color: #121212 !important;
-          transition: background-color 400ms linear;
+  @include media-breakpoint-up(lg) {
+    .navscroll.scrolled {
+      background-color: #B3BCC4 !important;
+      transition: background-color 400ms linear;
     }
   }
 
-    @include media-breakpoint-down(md) {
-      .navscroll {
-        background-color: #121212 !important;
+  @include media-breakpoint-down(md) {
+    .navscroll {
+      background-color: #121212 !important;
+      color: white;
     }
   }
 
   @include media-breakpoint-between(md, lg) {
-      .navscroll {
-        background-color: #121212 !important;
+    .navscroll {
+      background-color: #121212 !important;
+      color: white;
     }
   }
-  
+
   .navbar-light {
     .navbar-toggler {
       border-color: transparent !important;
+
       &:focus {
         box-shadow: none !important;
       }
     }
+
     .navbar-nav .nav-link {
-      color: white !important;
+      color: black !important;
+
       &:focus {
-        color: $orange !important;
+        color: #8B0000 !important;
       }
     }
   }
 }
 
 footer {
-  background-color: #121212 !important;
+  background-color: #8B0000 !important;
 }
 
 /* NAVBAR SCROLL & FOOTER */
 
 /* VARIABLES & MIXINS */
 
-$orange: #ff4c00;
+$darkRed: #8B0000;
 $white: #ffffff;
+
 @mixin background-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hdrcolor {
-  color: $orange;
+  color: $darkRed;
 }
 
 .btn_custom {
-  background-color: $orange !important;
+  background-color: $darkRed !important;
   color: white !important;
   border-radius: 2px !important;
   min-width: 80px;
@@ -95,7 +101,7 @@ $white: #ffffff;
 }
 
 .sec_bg {
-  background: rgba(0,0,0,.4);
+  background: rgba(0, 0, 0, .4);
 }
 
 .secondary_header {
@@ -111,11 +117,30 @@ $white: #ffffff;
 /* HOME PAGE */
 
 .sec_1 {
-  background-image: url("../images/44.jpg");
-  @include background-image;
+
+  //background-image: url("../images/44.jpg");
+  //@include background-image;
   .header_height {
     height: 100vh;
+    background-color: #ffffff;
   }
+}
+
+.bg_imgs {
+  background-image: url("../images/44.jpg");
+  @include background-image;
+}
+
+.banner_h {
+  height: 10vh;
+}
+
+.banner-user-title {
+  font-size: 36px;
+}
+
+.deve {
+  font-weight: 700;
 }
 
 .sec_2 {
@@ -130,15 +155,16 @@ $white: #ffffff;
 .shp {
   width: 84px;
   height: 84px;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  border-radius: 50%;
   text-align: center;
   line-height: 84px;
   position: absolute;
   top: -42px;
   left: 50%;
   margin-left: -42px;
-  background: $orange;
-  color: $white;
+  background: white;
+  color: $darkRed;
+  border: 1px solid $darkRed;
 }
 
 .snip1534 {
@@ -151,12 +177,14 @@ $white: #ffffff;
   text-align: left;
   font-size: 16px;
   background-color: #000000;
+
   * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: all 0.45s ease;
     transition: all 0.45s ease;
   }
+
   a {
     position: absolute;
     top: 0;
@@ -165,6 +193,7 @@ $white: #ffffff;
     right: 0;
     z-index: 1;
   }
+
   img {
     vertical-align: top;
     max-width: 100%;
@@ -172,12 +201,14 @@ $white: #ffffff;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.75;
+
     &:hover {
       opacity: 1;
       -webkit-filter: grayscale(0%);
       filter: grayscale(0%);
     }
   }
+
   .img_caption {
     z-index: 1;
     align-items: center;
@@ -191,6 +222,7 @@ $white: #ffffff;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     padding: 20px;
+
     &::before {
       content: "";
       width: 20px;
@@ -212,7 +244,7 @@ $white: #ffffff;
 
 .career_life {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  background-color: $orange;
+  background-color: $darkRed;
   height: 100%;
   padding: 15px;
   margin: auto 20px;
@@ -227,12 +259,14 @@ form {
   input {
     height: 55px !important;
   }
+
   input,
   textarea {
     outline: 0 !important;
     box-shadow: none !important;
     border: solid 1px #ececec !important;
   }
+
   .form_textarea {
     max-height: 130px;
     height: 130px !important;

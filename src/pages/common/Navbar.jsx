@@ -1,6 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import logo from "../../images/main.svg"
+import logo from "../../images/logo.svg"
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import PeopleIcon from '@material-ui/icons/People';
@@ -19,11 +19,11 @@ const Navbar = () => {
 				    <span className="text-white"><MenuIcon style={{ fontSize: 35 }} /></span>
 				  </button>
 				  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul className="navbar-nav ml-auto">
-				      <li className="nav-item active">
-				        <NavLink exact className="nav-link" to="/"><span className="d-lg-none d-xl-none mr-3"><HomeIcon /></span>Home<span className="sr-only">(current)</span></NavLink>
+				    <ul className="navbar-nav ms-auto">
+				      <li className="nav-item active navigation_bar">
+				        <NavLink exact className="nav-link" to="/"><span className="d-lg-none d-xl-none mr-3 navigation_bar"><HomeIcon /></span>Home<span className="sr-only"></span></NavLink>
 				      </li>
-				      <li className="nav-item">
+				      <li className="nav-item navigation_bar">
 				        <NavLink exact className="nav-link" to="/service"><span className="d-lg-none d-xl-none mr-3"><DvrIcon /></span>Services</NavLink>
 				      </li>
 				      <li className="nav-item">
@@ -35,6 +35,7 @@ const Navbar = () => {
 				      <li className="nav-item">
 				        <NavLink exact className="nav-link" to="/contact"><span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>Contact</NavLink>
 				      </li>
+					  <button className="btn p-8 btn_custom col-lg-5 col-md-5 col-6">Book Appointment With Us</button>
 				    </ul>
 				  </div>
 				</div>
