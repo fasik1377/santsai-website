@@ -65,8 +65,25 @@ html {
   }
 }
 
+
+.navigation_bar_footer {
+
+  @include media-breakpoint-up(lg) {
+    .navscroll.scrolled {
+      background-color: #B3BCC4 !important;
+      transition: background-color 400ms linear;
+    }
+  }
+
+}
+
 footer {
   background-color: #8B0000 !important;
+}
+
+.anchor {
+  text-decoration: none;
+  color: white;
 }
 
 /* NAVBAR SCROLL & FOOTER */

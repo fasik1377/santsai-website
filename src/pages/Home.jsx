@@ -8,7 +8,6 @@ import product1 from "../images/products/99.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
 import ECommerce from '@material-ui/icons/ShoppingBasket';
-import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 import UI from '@material-ui/icons/GraphicEq';
 import BannerAnim, { Element } from 'rc-banner-anim';
 import TweenOne from 'rc-tween-one';
@@ -89,28 +88,28 @@ const Home = () => {
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
 								<div className="shp"><BusinessIcon /></div>
 								<p className="mb-2 mt-4">Mobility Solutions</p>
-								<p className="text-muted text-left text-xl-center text-lg-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p className="text-muted text-left text-xl-center text-lg-center">We build complete solutions for mobile apps on Android and iOS. We can help you build applications and software for the mobile medium</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
 								<div className="shp"><WebIcon /></div>
 								<p className="mb-2 mt-4">Web Applications</p>
-								<p className="text-muted text-left text-xl-center text-lg-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p className="text-muted text-left text-xl-center text-lg-center">Advanced result-oriented web development services. We have expertise in all types of web application customize solutions.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
 								<div className="shp"><ECommerce /></div>
 								<p className="mb-2 mt-4">E-Commerce</p>
-								<p className="text-muted text-left text-xl-center text-lg-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p className="text-muted text-left text-xl-center text-lg-center">We are specialized in eCommerce Store Development & Conversion Optimization with a proven track record of developing successful online store.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
 								<div className="shp"><UI /></div>
 								<p className="mb-2 mt-4">UI/UX Design</p>
-								<p className="text-muted text-left text-xl-center text-lg-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+								<p className="text-muted text-left text-xl-center text-lg-center">We create user interfaces for your web or mobile applications for sustaining business growth by availing the benefits from the best technological resources.</p>
 							</div>
 						</div>
 					</div>
