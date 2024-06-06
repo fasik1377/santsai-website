@@ -9,7 +9,7 @@ const Contact = () => {
 		<>
 
 			<Secheader 
-				sectitle="Get In Touch" 
+				sectitle="Contact" 
 				secdesc="Lorem Ipsum is simply random text." 
 			/>
 

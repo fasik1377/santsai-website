@@ -100,6 +100,9 @@ $white: #ffffff;
 
 .hdrcolor {
   color: $darkRed;
+  font-size: 120;
+  font-weight: 900;
+
 }
 
 .btn_custom {
@@ -118,7 +121,10 @@ $white: #ffffff;
 }
 
 .sec_bg {
-  background: rgba(0, 0, 0, .4);
+  background-image: url("../images/nice.jpg");
+  @include background-image;
+  height: 800px;
+  width: 100%;
 }
 
 .secondary_header {
@@ -127,7 +133,7 @@ $white: #ffffff;
 }
 
 .sec_hdr {
-  background-image: url("../images/22.jpg");
+  background-image: url("../images/tab2.jpg");
   @include background-image;
 }
 
@@ -161,8 +167,44 @@ $white: #ffffff;
 }
 
 .sec_2 {
-  background-image: url("../images/22.jpg");
+  background-image: url("../images/sec_2.jpg");
   @include background-image;
+  height: 400px;
+  width: 100%;
+
+}
+
+.our {
+  font-weight: bolder;
+  margin-left: 140px;
+}
+
+.paragraph_1 {
+  margin-left: 100px;
+}
+.paragraph_2 {
+  margin-left: 60px;
+}
+
+.span_portfolio {
+  color: #8B0000;
+  font-weight: bolder;
+}
+
+.each-slide-effect>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+  width: 10%;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }
 
 .brands_logo div {

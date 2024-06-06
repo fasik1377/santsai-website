@@ -1,5 +1,4 @@
 import React from "react";
-import web from "../images/logo.png"
 import work1 from "../images/brands/adobe.svg"
 import work2 from "../images/brands/samsung.svg"
 import work3 from "../images/brands/ebay.svg"
@@ -14,6 +13,7 @@ import TweenOne from 'rc-tween-one';
 const BgElement = Element.BgElement;
 
 const Home = () => {
+
 	return (
 		<>
 			<section className="sec_1">
@@ -77,12 +77,23 @@ const Home = () => {
 				</div>
 			</section>
 
+			<section className="bg-dark">
+				<div className="container row py-5 m-auto col-lg-10 col-xl-9">
+					<p className="display-6 text-center mb-4 text-white">The company for web solutions</p>
+					<p className="text-white">We are a leading firm based in India. "Our ultimate objective is to provide best services and improve overall growth of client's business".
+
+						Santsai Corporation Pvt. Ltd. is a 24/7 web design & web development company India that delivers top class solutions to your technical challenges & aspirations. We hold immense specialization in offering tailor-made and quantifiable services in the spheres of eCommerce Website Development, WordPress, Magento, Joomla development, custom web application development, content management system, search engine optimization, internet marketing, mobile responsive website and mobile application development. We have made a name by delivering quality and valuable solutions to a large number of companies and lifting them above everyone else.</p>
+					<p className="text-white">Over 12 Years of Industry Expertise
+						Over 1200 projects delivered in 10+ countries
+						Expertise in app development, website design and usability
+						We understand your pain points
+						Quality Assurance and Timely Delivery
+						We are domain experts and friendly Support team
+						We keep it in your budget.</p>
+				</div>
+			</section>
 			<section>
 				<div className="container mx-auto py-5">
-					<div className="mb-4 text-center">
-						<p className="display-6 mb-1">What we do...</p>
-						<p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					</div>
 					<div className="row gy-5 d-flex align-items-center justify-content-evenly mt-0">
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
@@ -115,15 +126,20 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-
-			<section className="sec_2">
-				<div className="sec_bg py-5">
+			<section>
+				<div className="col-12 col-md-9 col-lg-6 container d-flex align-items-center">
+					<table>
+						<tr>
+							<p className="display-6 mb-1 fw-bold our">Our <span className="span_portfolio">Portfolio</span> </p>
+						</tr>
+						<tr>
+							<p className="paragraph_1">Get a beautifully crafted website with great</p>
+							<p className="paragraph_2"> user experience and conversion-focused design approach.</p>
+						</tr>
+					</table>
+				</div>
+				<div className="sec_2 py-5">
 					<div className="container d-flex justify-content-center align-items-center">
-						<div className="col-12 col-md-9 col-lg-6 text-center py-3">
-							<p className="display-6 mb-1 text-white">Our Brand Partner</p>
-							<img className="image-fluid py-3" alt="brand" width="40%" src={web} />
-							<p className="text-white lead">Lorem Ipsum is simply dummy text of the printing industry.</p>
-						</div>
 					</div>
 				</div>
 			</section>
