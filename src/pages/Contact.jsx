@@ -22,7 +22,7 @@ const Contact = () => {
 			from_name:name,
 			from_email:email,
 			to_phone:phone,
-			to_name:'Web Wizard',
+			to_name:'Santsai',
 			message:message,
 		};
 
@@ -49,20 +49,20 @@ const Contact = () => {
 			<section>
 			<div className="container row py-5 m-auto">
 				<div className="col-md-6 d-flex align-items-center justify-content-center order-1">
-					<form onSubmit={handleSubmit} className="col-lg-8 col-12 col-md-10 text-center emailForm">
-						<p className="display-6 text-center mb-2">Reach us</p>
-						<p>Our team is happy to answer your questions.</p>
+					<form onSubmit={handleSubmit} className="emailForm col-lg-8 col-12 col-md-10 text-center">
+						<h4 className="text-center mb-2">Send Us a Message!</h4>
+						<p>We are ready when you are. If you want to tell us something, or have any queries, feel free to contact us.</p>
 						<div className="mb-3">
-						  <input value={name} onChange={(e)=>setName(e.target.value)} type="text" className="form-control" id="name" placeholder="Your fullname" required/>
+						  <input value={name} onChange={(e)=>setName(e.target.value)} type="text" className="form-control" id="name" placeholder="Full Name" required/>
 						</div>
 						<div className="mb-3">
-						  <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" className="form-control" id="email" placeholder="E-mail address" required/>
+						  <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" className="form-control" id="email" placeholder="E-mail Address" required/>
 						</div>
 						<div className="mb-3">
-						  <input value={phone} onChange={(e)=>setPhone(e.target.value)} type="tel" className="form-control" id="number" placeholder="Contact number" required/>
+						  <input value={phone} onChange={(e)=>setPhone(e.target.value)} type="tel" className="form-control" id="number" placeholder="Phone Number" required/>
 						</div>
 						<div className="mb-3">
-						  <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className="form-control form_textarea" id="message" placeholder="Your message" rows="3"></textarea>
+						  <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className="form-control form_textarea" id="message" placeholder="Your Message" rows="3"></textarea>
 						</div>
 						<button type="submit" className="btn btn-lg btn_custom btn_shadow col-12">Send</button>
 					</form>
