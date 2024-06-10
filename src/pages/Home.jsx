@@ -3,7 +3,7 @@ import work1 from "../images/brands/adobe.svg"
 import work2 from "../images/brands/samsung.svg"
 import work3 from "../images/brands/ebay.svg"
 import work4 from "../images/brands/amazon.svg"
-import product1 from "../images/products/99.png"
+import product1 from "../images/process.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
 import ECommerce from '@material-ui/icons/ShoppingBasket';
@@ -147,32 +147,13 @@ const Home = () => {
 			<section>
 				<div className="container mx-auto py-5">
 					<div className="mb-5 text-center">
-						<p className="display-6 mb-1">Our Products</p>
-						<p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<p className="display-6 mb-1"><b>Our <span className="main_color">Process</span></b></p>
+						<p className="text-muted">We feel pleasure and overwhelmed to serve the clients with the perfect solutions depending upon their particular problems. We serve clients personally to make them our loyal partners in the business.</p>
 					</div>
-					<div className="row gy-3 d-flex align-items-center justify-content-evenly">
+					<div className="row gy-3 d-flex align-items-center">
 						<div className="col-md-3 text-center">
 							<div className="snip1534">
 								<img className="img-fluid" alt="product1" src={product1} />
-								<div className="img_caption">
-									<h6>Demo Product</h6>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-3 text-center">
-							<div className="snip1534">
-								<img className="img-fluid" alt="product2" src={product1} />
-								<div className="img_caption">
-									<h6>Demo Product</h6>
-								</div>
-							</div>
-						</div>
-						<div className="col-md-3 text-center">
-							<div className="snip1534">
-								<img className="img-fluid" alt="product3" src={product1} />
-								<div className="img_caption">
-									<h6>Demo Product</h6>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -182,8 +163,21 @@ const Home = () => {
 			<section className="bg-light">
 				<div className="container mx-auto py-5">
 					<div className="mb-5 text-center">
-						<p className="display-6 mb-1">We Worked With...</p>
-						<p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<p className="display-6 mb-1"><b> Our <span className="main_color">Happy Clients</span></b></p>
+					</div>
+					<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
+						<div className="col-md-3 col-4 col-lg-4 text-center">
+							<img className="img-fluid" alt="company1" src={work1} />
+						</div>
+						<div className="col-md-3 col-4 col-lg-4 text-center">
+							<img className="img-fluid" alt="company2" src={work2} />
+						</div>
+						<div className="col-md-3 col-4 col-lg-4 text-center">
+							<img className="img-fluid" alt="company3" src={work3} />
+						</div>
+						<div className="col-md-3 col-4 col-lg-4 text-center">
+							<img className="img-fluid" alt="company4" src={work4} />
+						</div>
 					</div>
 					<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
 						<div className="col-md-3 col-4 col-lg-4 text-center">

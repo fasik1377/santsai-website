@@ -139,10 +139,11 @@ $white: #ffffff;
 
 /* HOME PAGE */
 
-.sec_1 {
+.sec_3 {
 
-  //background-image: url("../images/44.jpg");
-  //@include background-image;
+  background-image: url("../images/process.png");
+  @include background-image;
+
   .header_height {
     height: 100vh;
     background-color: #ffffff;
@@ -179,9 +180,14 @@ $white: #ffffff;
   margin-left: 140px;
 }
 
+.main_color {
+  color: #8B0000;
+}
+
 .paragraph_1 {
   margin-left: 100px;
 }
+
 .paragraph_2 {
   margin-left: 60px;
 }
@@ -227,74 +233,9 @@ $white: #ffffff;
 }
 
 .snip1534 {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  min-width: 230px;
-  width: 100%;
+  width: 1000px;
+  height: 400px;
   color: $white;
-  text-align: left;
-  font-size: 16px;
-  background-color: #000000;
-
-  * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.45s ease;
-    transition: all 0.45s ease;
-  }
-
-  a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  img {
-    vertical-align: top;
-    max-width: 100%;
-    backface-visibility: hidden;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.75;
-
-    &:hover {
-      opacity: 1;
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
-    }
-  }
-
-  .img_caption {
-    z-index: 1;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(255, 76, 0, 0.85);
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    padding: 20px;
-
-    &::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      background-color: $white;
-      top: -20px;
-      bottom: 0;
-      left: 50%;
-      -webkit-transform: translate(-50%, 50%) rotate(45deg);
-      transform: translate(-50%, 50%) rotate(45deg);
-      position: absolute;
-    }
-  }
 }
 
 /* SERVICE PAGE */
