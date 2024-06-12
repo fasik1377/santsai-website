@@ -1,12 +1,14 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import logo from "../../images/logo.svg"
+import logo from "../../images/logo-transparent-svg.svg"
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import PeopleIcon from '@material-ui/icons/People';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import WorkIcon from '@material-ui/icons/Work';
 import DvrIcon from '@material-ui/icons/Dvr';
+import {useState, useEffect, useRef} from "react";
+import { Dropdown } from "./Dropdown";
 
 const Navbar = () => {
 	return(
