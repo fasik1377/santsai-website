@@ -26,7 +26,7 @@ const Contact = () => {
 			message:message,
 		};
 
-		emailjs.send(serviceId, templateId, templateParams, publicKey)
+		emailjs.send(serviceId,templateId,templateParams,publicKey)
 		.then ((response)=>{
 			console.log('Email sent successfully!', response);
 				setName('');
@@ -71,18 +71,18 @@ const Contact = () => {
 				<div className="col-md-6 d-flex align-items-center order-lg-1 order-md-2 flex-column py-5">
 					<div className="row col-12">
 						<div className="col-md-6">
-							<span className="lead mb-3">Support</span>
+							<span className="lead mb-3"><b>Head Office</b></span>
 							<p className="small">
-								Get help with all lorem ipsum products.<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+4654664546<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>sample@example.com<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>New York, USA
+								You can contact our head office<br/><br/>
+								<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+91-8805587310<br/><br/>
+								<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>info@santcorporation.com<br/><br/>
+								<span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005
 							</p>
 
 						</div>
 						<div className="col-md-6">
 							<span className="lead mb-3">Sales</span>
-							<p className="small">Purchase lorem ipsum products.<br/><br/>
+							<p className="small">You can contact our sales office<br/><br/>
 								<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+4345335546<br/><br/>
 								<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>demo@example.com<br/><br/>
 								<span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>New York, USA

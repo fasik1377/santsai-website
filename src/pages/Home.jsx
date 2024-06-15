@@ -182,8 +182,8 @@ const Home = () => {
 							<p className="display-6 mb-1 fw-bold our">Our <span className="span_portfolio">Portfolio</span> </p>
 						</tr>
 						<tr>
-							<p className="paragraph_1">Get a beautifully crafted website with great</p>
-							<p className="paragraph_2"> user experience and conversion-focused design approach.</p>
+							<p className="paragraph_1">Obtain a stunningly designed website with an excellent</p>
+							<p className="paragraph_2">user experience and a design strategy that is conversion-focused.</p>
 						</tr>
 					</table>
 				</div>
@@ -197,7 +197,7 @@ const Home = () => {
 				<div className="container mx-auto py-5">
 					<div className="mb-5 text-center">
 						<p className="display-6 mb-1"><b>Our <span className="main_color">Process</span></b></p>
-						<p className="text-muted">We feel pleasure and overwhelmed to serve the clients with the perfect solutions depending upon their particular problems. We serve clients personally to make them our loyal partners in the business.</p>
+						<p className="text-muted">We take great pride in providing our clients with ideal solutions tailored to their specific issues. To earn our clients' loyalty as business partners, we provide them with personal service.</p>
 					</div>
 					<div className="row gy-3 d-flex align-items-center">
 						<div className="col-md-3 text-center">

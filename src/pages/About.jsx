@@ -4,64 +4,54 @@ import Teams from "../data/Teamsdata";
 
 
 const Tcards = (props) => {
-	return (
+  return (
 
-		<figure className="figure col-md-3 text-center">
-			<img src={props.timage} className="figure-img img-fluid rounded col-lg-6 col-7 col-md-10" alt="team3" />
-			  <figcaption className="figure-caption text-dark">{props.ttitle}</figcaption>
-		</figure>
-	);
+    <figure className="figure col-md-3 text-center">
+      <img src={props.timage} className="figure-img img-fluid rounded col-lg-6 col-7 col-md-10" alt="team3" />
+      <figcaption className="figure-caption text-dark">{props.ttitle}</figcaption>
+    </figure>
+  );
 };
 
 const About = () => {
-	return (
-		<>
+  return (
+    <>
 
-		<Secheader 
-			sectitle="About" 
-			secdesc="Lorem Ipsum is simply random text." 
-		/>
+      <Secheader
+        sectitle="About"
+        secdesc="The Company for Web Solutions" style={{ color: "#000000" }}
+      />
 
-		<section>
-			<div className="container mx-auto py-5 col-lg-10 col-xl-9">
-				<div className="mb-5 text-center">
-					<p className="display-6 mb-1">Who We Are...</p>
-					<p className="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div>
-				<p>We like to say, if our best clients and our organisation were people, they’d be friends. We want to understand your business and sit beside you at the table, not across from you. We’re built to help you understand and leverage technology all the way from the Reception Desk to the Board Room. We’re big on the cloud and the opportunity it presents.</p>
-				<p>Whether your requirements are totally on-premises, totally in the cloud, or somewhere in between, Evologic is flexible in its application of the right technology. IT has to work for you.</p>
-			</div>
-		</section>
+      <section>
+        <div className="container mx-auto py-5 col-lg-10 col-xl-9">
+          <div className="mb-5 text-center">
+            <p className="display-6 mb-1">Happy to have you here!</p><br />
+            <p className="text-muted"><b>We are a software development company from India helping enterprise businesses in their digital transition through our suite of web and mobile application services.</b></p>
+          </div>
+          <p>Dot Solutions Lab is a Hyderabad-based Web development company in India specialized in delivering quality, cost effective, user friendly and result-oriented web designing, website development, mobile application development and e-commerce and online marketing (SEO and SEM) solutions for a global clientele. Our professional, creative and expert designing team guided by customer centric approach helps you turn your website in a sales engine.
 
-		<section className="bg-light">
-			<div className="container row py-5 m-auto col-lg-10 col-xl-9">
-				<p className="display-6 text-center mb-4">Our Story</p>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
-			</div>
-		</section>
+            We have delivered innovative and unique mobile application, web designing and development solutions of varying complexities to customers all over the world. Satisfaction of our clients has been our top most priority since our inception as a website design and development company.</p>
+          <p></p>
+        </div>
+      </section>
 
-		<section>
-			<div className="container py-5 m-auto">
-				<div className="mb-4">
-					<p className="display-6 text-center mb-1">Our Team</p>
-					<p className="d-lg-block d-none col-8 m-auto text-center text-muted">These people are the reason for our success and stainless reputation.<br/>They have years of experience and absolute dedication to what they do.</p>
-				</div>
-				<div className="row col-lg-11 d-flex align-items-center justify-content-evenly m-auto">
-						{
-							Teams.map((val, ind) => {
-								return <Tcards key={ind}
-									timage={val.timage}
-									ttitle={val.ttitle}
-								/>
-							})
-						}
-				</div>
-			</div>
-		</section>
-		
-		</>
-	);
+      <section className="bg-light">
+        <div className="container row py-5 m-auto col-lg-10 col-xl-9">
+          <p className="display-6 text-center mb-4">Why Us?</p>
+          <p>Dot Solutions Lab is constantly prepared to go above and above in order to foster the greatest commercial connections. All projects, regardless of size, are given careful consideration and full attention by Dot Solutions Lab, which always adopts a holistic approach. Distinguished causes for collaborating on your upcoming project with Dot Solutions Lab:</p>
+          <p>
+          &#8594; &nbsp;<b>Detailed Analysis -</b>  Thorough evaluation of the suitability of your solutions and your company's objectives. <br /><br />
+          &#8594; &nbsp;<b>Cutting Edge Technologies -</b>  Design and development using the newest, most advanced technologies.<br /><br />
+          &#8594; &nbsp;  <b>Support & Focus on quality - </b> Support and upkeep for a year or a lifetime with high-quality assistance.<br /><br />
+          &#8594; &nbsp;<b>We promise, Optimal Solution -</b> We'll create and implement the best possible solutions to support you in achieving your objectives.<br /><br />
+          &#8594; &nbsp;<b>Timely Delivery -</b> Design and development using the newest, most advanced technologiesbr.<br /><br />
+          &#8594; &nbsp;  <b>We promise, Futuristic Solution -</b> Our futuristic solution will be flexible and extensible as your company expands.</p>
+        </div>
+      </section>
+
+      
+    </>
+  );
 };
 
 export default About;

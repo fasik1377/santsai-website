@@ -7,9 +7,6 @@ import PeopleIcon from '@material-ui/icons/People';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import WorkIcon from '@material-ui/icons/Work';
 import DvrIcon from '@material-ui/icons/Dvr';
-import {useState, useEffect, useRef} from "react";
-import { Dropdown } from "./Dropdown";
-
 const Navbar = () => {
 	return(
 		<>

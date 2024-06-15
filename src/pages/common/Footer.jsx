@@ -7,17 +7,17 @@ const Footer = () => {
 		<>
 			<footer>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
-					<div className="text-white medium">We're glad you decided to get in touch with us.</div>
+					<div className="text-white medium">We appreciate you choosing to contact us.</div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
 					<div className="text-white">
 						<span className="mx-2"><MobileIcon fontSize="medium" /></span>
 					</div>
-					<div className="text-white medium">+91 70-32234521</div>
+					<div className="text-white medium">+91-8805587310</div>
 					<div className="text-white">
 						<span className="mx-2"><EmailIcon fontSize="medium" /></span>
 					</div>
-					<div className="text-white medium">info@dslab.in</div>
+					<div className="text-white medium">info@santcorporation.com</div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
 					<div className="text-white small">Terms of Use | Privacy Policy | Return & Refund Policy</div>
