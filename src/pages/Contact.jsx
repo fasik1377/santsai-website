@@ -80,14 +80,6 @@ const Contact = () => {
 							</p>
 
 						</div>
-						<div className="col-md-6">
-							<span className="lead mb-3">Sales</span>
-							<p className="small">You can contact our sales office<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+4345335546<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>demo@example.com<br/><br/>
-								<span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>New York, USA
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>

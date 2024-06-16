@@ -21,7 +21,7 @@ const Service = () => {
 
       <Secheader 
         sectitle="Services" 
-        secdesc="Services" 
+        secdesc="Our services are listed below" 
       />
 
       <section> 

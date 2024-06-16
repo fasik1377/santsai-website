@@ -1,8 +1,12 @@
 import React from "react";
-import work1 from "../images/brands/adobe.svg"
-import work2 from "../images/brands/samsung.svg"
-import work3 from "../images/brands/ebay.svg"
-import work4 from "../images/brands/amazon.svg"
+import work1 from "../images/brands/mobily.jpeg"
+import work2 from "../images/brands/solutions.png"
+import work3 from "../images/brands/triazine.jpeg"
+import work4 from "../images/brands/drc.jpeg"
+import work5 from "../images/brands/digital_upward.jpeg"
+import work6 from "../images/brands/Nehish.png"
+import work7 from "../images/brands/wiftcap.jpeg"
+import work8 from "../images/brands/Zeorbit.jpg"
 import product1 from "../images/process.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
@@ -216,30 +220,30 @@ const Home = () => {
 					</div>
 					<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company1" src={work1} />
+						<a href="https://mobilyinfotech.com/"><img className="img-fluid" alt="company1" src={work1} /></a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company2" src={work2} />
+						<a href="https://www.solutionanalysts.com/"><img className="img-fluid" alt="company2" src={work2} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company3" src={work3} />
+						<a href="https://triazinesoft.com/">	<img className="img-fluid" alt="company3" src={work3} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company4" src={work4} />
+						<a href="https://www.drcsystems.com/"><img className="img-fluid" alt="company4" src={work4} /> </a>
 						</div>
 					</div>
 					<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company1" src={work1} />
+						<a href="https://www.digitalupward.com/"><img className="img-fluid" alt="company1" src={work5} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company2" src={work2} />
+						<a href="https://nehish.com/"><img className="img-fluid" alt="company2" src={work6} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company3" src={work3} />
+						<a href="https://www.wiftcap.com/"><img className="img-fluid" alt="company3" src={work7} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-							<img className="img-fluid" alt="company4" src={work4} />
+						<a href="https://zeorbit.com/"><img className="img-fluid" alt="company4" src={work8} /> </a>
 						</div>
 					</div>
 				</div>
