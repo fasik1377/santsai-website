@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/santsai-website/static/css/main.48fac31a.css",
+    "main.js": "/santsai-website/static/js/main.d4622e96.js",
+    "static/media/44.jpg": "/santsai-website/static/media/44.1de38ee8e4829f3c92b4.jpg",
+    "static/media/sec_2.jpg": "/santsai-website/static/media/sec_2.719698716b016b97a4cc.jpg",
+    "static/media/nice.jpg": "/santsai-website/static/media/nice.4987eda1555c56035fe8.jpg",
+    "static/media/3.png": "/santsai-website/static/media/3.083202ff4cf657894a5e.png",
+    "static/media/4.png": "/santsai-website/static/media/4.9931d6dea3a8e36b0ca4.png",
+    "static/media/2.png": "/santsai-website/static/media/2.1d54aa0ce0ded81f55ad.png",
+    "static/media/6.png": "/santsai-website/static/media/6.d4d9b02da64c304aa9d3.png",
+    "static/media/5.png": "/santsai-website/static/media/5.2045d9b2d35b69faa46b.png",
+    "static/media/7.png": "/santsai-website/static/media/7.0f8e7eab4abe7f253f30.png",
+    "static/media/logo-transparent-svg.svg": "/santsai-website/static/media/logo-transparent-svg.bf37510011c4480b7e2c0c8d1fe4a958.svg",
+    "static/media/process.png": "/santsai-website/static/media/process.2e90aa689e532bf98c2d.png",
+    "static/media/Nehish.png": "/santsai-website/static/media/Nehish.cc4400d118c4a5d6506b.png",
+    "static/media/1.jpg": "/santsai-website/static/media/1.671d75578411768cfe90.jpg",
+    "static/media/solutions.png": "/santsai-website/static/media/solutions.006cf9bfbbbeac826599.png",
+    "static/media/8.jpg": "/santsai-website/static/media/8.5ae1a33052e06b7720f3.jpg",
+    "static/media/tab2.jpg": "/santsai-website/static/media/tab2.1b55da845884d1308460.jpg",
+    "static/media/Zeorbit.jpg": "/santsai-website/static/media/Zeorbit.00f4e6a4a30499e33dd7.jpg",
+    "static/media/web-development.svg": "/santsai-website/static/media/web-development.e9f20502d6c2b0fddcedb6bcf66314e4.svg",
+    "static/media/cloud.svg": "/santsai-website/static/media/cloud.fd10025d84bd02c3fdd1d4f7f0c7fe89.svg",
+    "static/media/bioinformatics.svg": "/santsai-website/static/media/bioinformatics.2de641adddfaf845d0c9502954f07c0c.svg",
+    "static/media/website-design.svg": "/santsai-website/static/media/website-design.3e2eb4a7f9b28ed4eae350d5bce05b9e.svg",
+    "static/media/ecommerce.svg": "/santsai-website/static/media/ecommerce.d6a618bde2c13bead008c32ad5d502ed.svg",
+    "static/media/e-commerce.svg": "/santsai-website/static/media/e-commerce.21f499315425fe932096cf9d000efa8f.svg",
+    "static/media/phone.svg": "/santsai-website/static/media/phone.84c3b4f8b6e5cb0bb5e32dd97ddceee7.svg",
+    "static/media/ui-ux.svg": "/santsai-website/static/media/ui-ux.4b7df08010ee86e94ba1bea77a87f7f6.svg",
+    "index.html": "/santsai-website/index.html",
+    "main.48fac31a.css.map": "/santsai-website/static/css/main.48fac31a.css.map",
+    "main.d4622e96.js.map": "/santsai-website/static/js/main.d4622e96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48fac31a.css",
+    "static/js/main.d4622e96.js"
+  ]
+}
