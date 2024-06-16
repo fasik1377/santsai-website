@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Navbar from "./pages/common/Navbar";
 import Footer from "./pages/common/Footer";
 import Career from "./pages/Career";
+import Term from "./pages/Term";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 const App = () => {
 	return (
@@ -20,6 +21,7 @@ const App = () => {
 				<Route exact path="/service" component={Service} />
 				<Route exact path="/career" component={Career} />
 				<Route exact path="/contact" component={Contact} />
+				<Route exact path="/term" component={Term} />
 				<Redirect to="/" />
 			</Switch>
 			<Footer />

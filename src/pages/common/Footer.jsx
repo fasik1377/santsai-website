@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import MobileIcon from '@material-ui/icons/PhoneAndroidOutlined';
 import EmailIcon from '@material-ui/icons/EmailRounded';
 
@@ -20,7 +21,12 @@ const Footer = () => {
 					<div className="text-white medium">info@santcorporation.com</div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
-					<div className="text-white small">Terms of Use | Privacy Policy | Return & Refund Policy</div>
+					<div className="text-white small"> 
+						<table><tr><td></td></tr></table>
+						<NavLink className="terms" to="/term">
+						Terms of Use</NavLink>| <NavLink className="terms" to="/term">
+						Privacy Policy</NavLink> | <NavLink className="terms" to="/term">
+						Return & Refund Policy</NavLink> </div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
 					<div className="text-white small">Copyright © 2024 <a className="anchor" href="https://fasik1377.github.io/fasika-abera/">Fasika Abera</a>  -  All rights reserved</div>

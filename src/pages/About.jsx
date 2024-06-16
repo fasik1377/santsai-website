@@ -28,7 +28,7 @@ const About = () => {
             <p className="display-6 mb-1">Happy to have you here!</p><br />
             <p className="text-muted"><b>We are a software development company from India helping enterprise businesses in their digital transition through our suite of web and mobile application services.</b></p>
           </div>
-          <p>Dot Solutions Lab is a Hyderabad-based Web development company in India specialized in delivering quality, cost effective, user friendly and result-oriented web designing, website development, mobile application development and e-commerce and online marketing (SEO and SEM) solutions for a global clientele. Our professional, creative and expert designing team guided by customer centric approach helps you turn your website in a sales engine.
+          <p>Santsai Corporation Pvt. Ltd.olutions Lab is a Hyderabad-based Web development company in India specialized in delivering quality, cost effective, user friendly and result-oriented web designing, website development, mobile application development and e-commerce and online marketing (SEO and SEM) solutions for a global clientele. Our professional, creative and expert designing team guided by customer centric approach helps you turn your website in a sales engine.
 
             We have delivered innovative and unique mobile application, web designing and development solutions of varying complexities to customers all over the world. Satisfaction of our clients has been our top most priority since our inception as a website design and development company.</p>
           <p></p>
@@ -38,7 +38,7 @@ const About = () => {
       <section className="bg-light">
         <div className="container row py-5 m-auto col-lg-10 col-xl-9">
           <p className="display-6 text-center mb-4">Why Us?</p>
-          <p>Dot Solutions Lab is constantly prepared to go above and above in order to foster the greatest commercial connections. All projects, regardless of size, are given careful consideration and full attention by Dot Solutions Lab, which always adopts a holistic approach. Distinguished causes for collaborating on your upcoming project with Dot Solutions Lab:</p>
+          <p>Santsai Corporation Pvt. Ltd.olutions Lab is constantly prepared to go above and above in order to foster the greatest commercial connections. All projects, regardless of size, are given careful consideration and full attention by Santsai Corporation Pvt. Ltd.olutions Lab, which always adopts a holistic approach. Distinguished causes for collaborating on your upcoming project with Santsai Corporation Pvt. Ltd.olutions Lab:</p>
           <p>
           &#8594; &nbsp;<b>Detailed Analysis -</b>  Thorough evaluation of the suitability of your solutions and your company's objectives. <br /><br />
           &#8594; &nbsp;<b>Cutting Edge Technologies -</b>  Design and development using the newest, most advanced technologies.<br /><br />
