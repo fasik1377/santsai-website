@@ -81,6 +81,7 @@ const Home = () => {
 								key="1"
 							>
 								<div className="bg_imgs">
+									
 									<BgElement
 										key="bg"
 										className="bg"

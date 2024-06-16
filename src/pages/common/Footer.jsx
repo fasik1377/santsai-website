@@ -23,7 +23,7 @@ const Footer = () => {
 					<div className="text-white small">Terms of Use | Privacy Policy | Return & Refund Policy</div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
-					<div className="text-white small">Copyright © 2024 <a className="anchor" href="https://fasik1377.github.io/fasika-abera/">Fasika Abera</a>  - All rights reserved</div>
+					<div className="text-white small">Copyright © 2024 <a className="anchor" href="https://fasik1377.github.io/fasika-abera/">Fasika Abera</a>  -  All rights reserved</div>
 				</div>
 			</footer>
 		</>
