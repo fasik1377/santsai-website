@@ -42,31 +42,40 @@ const Privacy = () => {
                         <h5 className="mb-1">DISCLOSURE</h5><p>We may disclose your personal information if we are required by law to do so or if you violate our Terms of Service.
 
 
-                        </p><h5 className="mb-1">PAYMENT</h5><p>Aside from using reasonable efforts to provide accurate information through its website, the Company makes no warranties that this website is free of viruses, worms, Trojan horses, or the like, or that its content is appropriate for your particular use or up to date. The Company reserves the right to change the information at any time without notice. All materials, including downloadable software, contained in the Company's website are provided «as is» and without warranty of any kind to the extent permitted by the applicable law. Any outcomes obtained from using any software found on this website are not guaranteed by the company. Any use of the content on this website is entirely your responsibility.
+                        </p><h5 className="mb-1">PAYMENT</h5><p>We process payments using Razorpay. Your card information is not kept on Razorpay's servers by us. When processing payments, the Payment Card Industry Data Security Standard (PCI-DSS) encrypts the data. We only keep your purchase transaction data for as long as it takes to finish your purchase. Your purchase transaction information is not kept after that is finished.
 
+                            Our payment gateway complies with PCI-DSS standards, which are overseen by the PCI Security Standards Council, an alliance of major credit card companies, American Express, Discover, and Visa.
 
-
-                            The information on this website does not change or add to any warranty that you might be entitled to because of a business agreement you have with the company.
-
-                            The Company shall not be responsible for any incidental, consequential, or indirect damages, including but not restricted to lost income or profits, interruption of business, or loss of data resulting from or related to the use, incapacity to use, or reliance on any content on this or any linked website.
-
-                            In any case, the Company's liability for direct damages resulting from or related to the use, incapacity to use, or reliance on any content on this website or any linked website will never be more than INR 1,000.
-
+                            The PCI-DSS regulations aid in guaranteeing that our store and its service providers handle credit card information securely.
+                            You might also want to read the terms and conditions of Razorpay on for additional information. <a className="razo" href="https://razorpay.com">https://razorpay.com</a>
 
 
 
 
+                        </p><h5 className="mb-1">THIRD-PARTY SERVICES</h5><p>Generally speaking, the third-party vendors we work with will only gather, utilise, and share your data as needed to enable them to carry out the services they offer to us.
 
-                        </p><h4 className="mb-1">6. Users’ Comments</h4><p>The Company disclaims all responsibility to keep an eye on any content you may post on its website.
+                            Regarding the information we must give them for your purchase-related transactions, some third-party service providers, like payment gateways and other payment transaction processors, have their own privacy policies.
 
-                            You guarantee that no information you transmit to the Company through the website violates any applicable laws or intellectual property rights, including any comments you send us that are not personal data. Materials (the term "Material" refers to any projects, files, or other attachments sent to us). Such data, materials, or remarks shall be regarded as non-proprietary and non-confidential. By providing any data or material, you grant the Company the right, indefinitely, and unrestricted use to perform, display, alter, and transmit such data, material, or comments, including any underlying concept, idea, or know-how (the term "Material" is meant to encompass all projects, files, or other attachments sent to us). The Company reserves the right to use such information in any way it chooses.
-                        </p><h4 className="mb-1">7. Applicable law – Severability</h4><p>TIndian law will apply to any dispute or claim relating to or arising out of the Terms of Use.
+                            It is advised that you review the privacy policies of these providers in order to comprehend how these providers will handle your personal information.
 
+                            Specifically, keep in mind that some providers might have facilities or be based in a different jurisdiction than you or us. Therefore, your information may be governed by the laws of the jurisdiction(s) in which the third-party service provider or its facilities are located if you choose to move forward with a transaction involving their services.
 
-                            The remainder of these Terms of Use will still be in full force and effect even if a court rules that any one of these provisions is unlawful, void, or unenforceable.
+                            This Privacy Policy and the Terms of Service on our website no longer apply to you once you leave our store's website or are routed to a third-party website or application.
 
-                        </p><h4 className="mb-1">8. Modifications of the Terms of Use</h4><p>The Company reserves the right to change the Terms of Use under which this website is offered at any time and without notice. You will be automatically bound by these modifications when you use this site, and should periodically read the Terms of Use.
                         </p>
+                        <span className="text-muted"><b>Link</b></span> <p>Links on our store may take you out of our website when you click on them. You should read the privacy statements of other websites as we have no control over their policies.
+                        </p><h5 className="mb-1">SECURITY</h5><p>We use appropriate safeguards and industry best practices to ensure that your personal information is not improperly lost, misused, accessed, disclosed, altered, or destroyed.
+                        </p><h5 className="mb-1">COOKIES</h5><p>Cookies help us to keep track of your user's session. On other websites, it is not used to personally identify you.</p>
+                        <h5 className="mb-1">AGE OF CONSENT</h5><p>By accessing this website, you attest that you are either the legal age of majority in your state or province of residence, or that you are the legal age of majority in your state or province of residence and that you have granted us permission to grant any minor dependents you may have access to this website.</p>
+                        <h5 className="mb-1">CHANGES TO THIS PRIVACY POLICY</h5><p>Please check this privacy policy often as we reserve the right to make changes at any time. Any updates and clarifications will become effective as soon as they are posted on the website. To ensure that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it, we will notify you here of any significant changes to this policy.
+
+                            Your information might be given to the new owners of our store if it is bought out or merges with another business, allowing us to keep selling you goods.
+                        </p>         
+                                       <h5 className="mb-1">QUESTIONS AND CONTACT INFORMATION</h5><p>Contact our Privacy Compliance Officer at <b>info@santcorporation.com</b> if you would like to register a complaint, obtain, amend, or delete any personal information we may have about you, or if you just want more information.
+
+</p><br />
+<p>[Re: Privacy Compliance Officer]</p>
+<p>[ Santsai Corporation, Jharkhand, India]</p>
                     </div>
                     <p></p>
                 </div>
