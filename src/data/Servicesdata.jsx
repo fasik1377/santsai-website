@@ -30,7 +30,8 @@ const Data = [
   {
     scardimage: ui,
     scardtitle : "UI/UX DESIGN",
-    scarddesc: "We design user interfaces for your online or mobile applications so that you can continue to expand your business while taking use of cutting edge technology.",
+    scarddesc: "We design user interfaces for your web or mobile applications so that you can take advantage of the greatest technical resources to maintain business growth.
+",
   },
 
   {

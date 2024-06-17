@@ -41,7 +41,7 @@ const About = () => {
           <p>Santsai Corporation Pvt. Ltd.olutions Lab is constantly prepared to go above and above in order to foster the greatest commercial connections. All projects, regardless of size, are given careful consideration and full attention by Santsai Corporation Pvt. Ltd.olutions Lab, which always adopts a holistic approach. Distinguished causes for collaborating on your upcoming project with Santsai Corporation Pvt. Ltd.olutions Lab:</p>
           <p>
           &#8594; &nbsp;<b>Detailed Analysis -</b>  Thorough evaluation of the suitability of your solutions and your company's objectives. <br /><br />
-          &#8594; &nbsp;<b>Cutting Edge Technologies -</b>  Design and development using the newest, most advanced technologies.<br /><br />
+          &#8594; &nbsp;<b>Modern Technologies -</b>  Design and development using the newest, most advanced technologies.<br /><br />
           &#8594; &nbsp;  <b>Support & Focus on quality - </b> Support and upkeep for a year or a lifetime with high-quality assistance.<br /><br />
           &#8594; &nbsp;<b>We promise, Optimal Solution -</b> We'll create and implement the best possible solutions to support you in achieving your objectives.<br /><br />
           &#8594; &nbsp;<b>Timely Delivery -</b> Design and development using the newest, most advanced technologiesbr.<br /><br />

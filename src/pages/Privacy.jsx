@@ -70,12 +70,12 @@ const Privacy = () => {
                         <h5 className="mb-1">CHANGES TO THIS PRIVACY POLICY</h5><p>Please check this privacy policy often as we reserve the right to make changes at any time. Any updates and clarifications will become effective as soon as they are posted on the website. To ensure that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it, we will notify you here of any significant changes to this policy.
 
                             Your information might be given to the new owners of our store if it is bought out or merges with another business, allowing us to keep selling you goods.
-                        </p>         
-                                       <h5 className="mb-1">QUESTIONS AND CONTACT INFORMATION</h5><p>Contact our Privacy Compliance Officer at <b>info@santcorporation.com</b> if you would like to register a complaint, obtain, amend, or delete any personal information we may have about you, or if you just want more information.
+                        </p>
+                        <h5 className="mb-1">QUESTIONS AND CONTACT INFORMATION</h5><p>Contact our Privacy Compliance Officer at <b>info@santcorporation.com</b> if you would like to register a complaint, obtain, amend, or delete any personal information we may have about you, or if you just want more information.
 
-</p><br />
-<p>[Re: Privacy Compliance Officer]</p>
-<p>[ Santsai Corporation, Jharkhand, India]</p>
+                        </p><br />
+                        <p>[Re: Privacy Compliance Officer]</p>
+                        <p>[ Santsai Corporation, Jharkhand, India]</p>
                     </div>
                     <p></p>
                 </div>
