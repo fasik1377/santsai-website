@@ -19,7 +19,7 @@ const About = () => {
 
       <Secheader
         sectitle="About"
-        secdesc="The Company for Web Solutions" style={{ color: "#000000" }}
+        secdesc="The Company for Web Solutions"
       />
 
       <section>

@@ -9,6 +9,7 @@ import Navbar from "./pages/common/Navbar";
 import Footer from "./pages/common/Footer";
 import Career from "./pages/Career";
 import Term from "./pages/Term";
+import Privacy from "./pages/Privacy";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 const App = () => {
 	return (
@@ -22,6 +23,7 @@ const App = () => {
 				<Route exact path="/career" component={Career} />
 				<Route exact path="/contact" component={Contact} />
 				<Route exact path="/term" component={Term} />
+				<Route exact path="/privacy" component={Privacy} />
 				<Redirect to="/" />
 			</Switch>
 			<Footer />
