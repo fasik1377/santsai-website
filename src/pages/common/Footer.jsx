@@ -25,7 +25,7 @@ const Footer = () => {
 						<table><tr><td></td></tr></table>
 						<NavLink className="terms" to="/term">
 						Terms of Use</NavLink>| <NavLink className="terms" to="/privacy">
-						Privacy Policy</NavLink> | <NavLink className="terms" to="/privacy">
+						Privacy Policy</NavLink> | <NavLink className="terms" to="/return">
 						Return & Refund Policy</NavLink> </div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">

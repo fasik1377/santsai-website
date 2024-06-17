@@ -43,7 +43,7 @@ const Contact = () => {
 
 			<Secheader 
 				sectitle="Contact" 
-				secdesc="Lorem Ipsum is simply random text." 
+				secdesc="We appreciate you choosing to contact us." 
 			/>
 
 			<section>
