@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/santsai-website/static/css/main.48fac31a.css",
-    "main.js": "/santsai-website/static/js/main.237c6bf5.js",
+    "main.css": "/santsai-website/static/css/main.4ed19711.css",
+    "main.js": "/santsai-website/static/js/main.00bbe3d8.js",
     "static/media/44.jpg": "/santsai-website/static/media/44.1de38ee8e4829f3c92b4.jpg",
     "static/media/sec_2.jpg": "/santsai-website/static/media/sec_2.719698716b016b97a4cc.jpg",
     "static/media/nice.jpg": "/santsai-website/static/media/nice.4987eda1555c56035fe8.jpg",
@@ -28,11 +28,11 @@
     "static/media/phone.svg": "/santsai-website/static/media/phone.84c3b4f8b6e5cb0bb5e32dd97ddceee7.svg",
     "static/media/ui-ux.svg": "/santsai-website/static/media/ui-ux.4b7df08010ee86e94ba1bea77a87f7f6.svg",
     "index.html": "/santsai-website/index.html",
-    "main.48fac31a.css.map": "/santsai-website/static/css/main.48fac31a.css.map",
-    "main.237c6bf5.js.map": "/santsai-website/static/js/main.237c6bf5.js.map"
+    "main.4ed19711.css.map": "/santsai-website/static/css/main.4ed19711.css.map",
+    "main.00bbe3d8.js.map": "/santsai-website/static/js/main.00bbe3d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.48fac31a.css",
-    "static/js/main.237c6bf5.js"
+    "static/css/main.4ed19711.css",
+    "static/js/main.00bbe3d8.js"
   ]
 }
