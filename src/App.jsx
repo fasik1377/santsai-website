@@ -10,6 +10,7 @@ import Footer from "./pages/common/Footer";
 import Career from "./pages/Career";
 import Term from "./pages/Term";
 import Privacy from "./pages/Privacy";
+import Appointment from "./pages/Appointment";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Return from "./pages/Return.jsx";
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
 				<Route exact path="/term" component={Term} />
 				<Route exact path="/privacy" component={Privacy} />
 				<Route exact path="/return" component={Return} />
+				<Route exact path="/appointment" component={Appointment} />
 				<Redirect to="/" />
 			</Switch>
 			<Footer />
