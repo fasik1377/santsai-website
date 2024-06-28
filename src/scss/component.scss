@@ -95,7 +95,7 @@ footer {
   color: #8B0000;
 }
 
-.appoint{
+.appoint {
   height: 120px;
 }
 
@@ -146,6 +146,15 @@ $white: #ffffff;
   width: 100%;
 }
 
+.tech_cards {
+  padding-top: 140px;
+}
+
+.card_size {
+  height: 320px;
+  width: 200px;
+}
+
 .secondary_header {
   height: 300px;
   width: 100%;
@@ -176,6 +185,7 @@ $white: #ffffff;
 
 .banner_h {
   height: 10vh;
+  padding-left: 50px;
 }
 
 .banner-user-title {
