@@ -5,7 +5,7 @@ import work3 from "../images/brands/triazine.jpeg"
 import work4 from "../images/brands/drc.jpeg"
 import work5 from "../images/brands/digital_upward.jpeg"
 import work6 from "../images/brands/Nehish.png"
-import work7 from "../images/brands/wiftcap.jpeg"
+import work7 from "../images/brands/itc_hotels.png"
 import work8 from "../images/brands/Zeorbit.jpg"
 import product1 from "../images/process.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
@@ -241,7 +241,7 @@ const Home = () => {
 						<a href="https://nehish.com/"><img className="img-fluid" alt="company2" src={work6} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
-						<a href="https://www.wiftcap.com/"><img className="img-fluid" alt="company3" src={work7} /> </a>
+						<a href="https://www.itchotels.com/in/en"><img className="img-fluid" alt="company3" src={work7} /> </a>
 						</div>
 						<div className="col-md-3 col-4 col-lg-4 text-center">
 						<a href="https://zeorbit.com/"><img className="img-fluid" alt="company4" src={work8} /> </a>

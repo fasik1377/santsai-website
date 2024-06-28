@@ -36,7 +36,7 @@ const Career = () => {
 		<>
 			<Secheader 
 				sectitle="We Are Hiring!" 
-				secdesc="Work at Lorem Ipsum. Your career starts here." 
+				secdesc="Work at Santsai Corporation. Your career starts here." 
 			/>
 
 			<section>
