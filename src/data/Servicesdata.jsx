@@ -11,6 +11,7 @@ const Data = [
 
   {
     scardimage: phone,
+    link:"https://medrectech.com/solution/mobile-solution",
     scardtitle : "MOBILITY SOLUTIONS",
     scarddesc: "We provide end-to-end services for iOS and Android mobile applications. You can get assistance from us in developing software and apps for mobile devices.",
   },
@@ -54,6 +55,11 @@ const Data = [
     scardimage:smac,
     scardtitle : "BIO INFORMATICS",
     scarddesc: "The application of computational and analytical techniques to the collection and interpretation of biological data is known as bioinformatics.",
+  },
+  {
+    scardimage:ecommerce,
+    scardtitle : "DIGITAL MARKETING",
+    scarddesc: "Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication.",
   },
 
 
