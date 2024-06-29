@@ -7,14 +7,21 @@ import work5 from "../images/brands/digital_upward.jpeg"
 import work6 from "../images/brands/Nehish.png"
 import work7 from "../images/brands/itc_hotels.png"
 import work8 from "../images/brands/Zeorbit.jpg"
-import flutter from "../images/tech/flutter1.png"
+import flutter from "../images/tech/flutter.png"
 import react from "../images/tech/reactjs.png"
 import node from "../images/tech/nodejs.png"
 import python from "../images/tech/python.png"
 import angular from "../images/tech/angular.png"
 import laravel from "../images/tech/laravel.png"
-import bootstrap from "../images/tech/bootstrap.jpeg"
+import bootstrap from "../images/tech/bootstrap.png"
 import java from "../images/tech/java.png"
+import mysql from "../images/tech/mysql.png"
+import mongodb from "../images/tech/mongodb.png"
+import ai from "../images/tech/ai.png"
+import cplus from "../images/tech/Cplus.png"
+import javascript from "../images/tech/javascript.png"
+import tailwind from "../images/tech/tailwind.png"
+import odoo from "../images/tech/odoo.png"
 import product1 from "../images/process.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
@@ -29,7 +36,7 @@ const Home = () => {
 	return (
 		<>
 			<section className="sec_1">
-				<div className="header_height d-flex align-items-center">
+				<div className="sec_bg header_height d-flex align-items-center">
 					<div className="container banner_h">
 						<BannerAnim prefixCls="banner-user" autoPlay>
 							<Element
@@ -141,48 +148,6 @@ const Home = () => {
 							</Element>
 						</BannerAnim>
 					</div>
-					<div className="tech_cards row">
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://flutter.dev/"><img src={flutter} alt="" /></a>
-							</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://react.dev/"><img src={react} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://laravel.com/"><img src={laravel} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://getbootstrap.com/"><img src={bootstrap} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://www.java.com/en/"><img src={java} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://angular.dev/"><img src={angular} style={{width:"220px"}} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://www.python.org/"><img src={python} style={{width:"180px"}} alt="" /></a>
-								</div>
-						</div>
-						<div className="card_size col-sm-3">
-								<div class="card-body">
-								<a href="https://flutter.dev/"><img src={node} style={{width:"240px"}} alt="" /></a>
-								</div>
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -191,7 +156,7 @@ const Home = () => {
 					<p className="display-6 text-center mb-4 text-white">The company for web solutions</p>
 					<p className="text-white">Our company is one of the top ones in India. "Our ultimate objective is to provide best services and improve overall growth of client's business" . Santsai Corporation Pvt. Ltd. is an Indian web design and development company that operates around the clock and provides exceptional solutions for your technical needs and goals. In the areas of eCommerce website development, WordPress, Magento, Joomla development, custom web application development, content management system, search engine optimisation, internet marketing, mobile responsive website and mobile application development, we have great expertise providing specialised and measurable services. We have established our reputation by providing numerous businesses with worthwhile and high-quality solutions that set them apart from the competition.
 					</p>
-					<p className="text-white">12+ Years of Experience in the Industry more than 1200 completed projects in more than ten nations knowledge of website design, usability, and app development We recognise your discomforts. Timely delivery and quality assurance With a helpful and amiable support staff, we are subject matter experts and maintain affordability.</p>
+					<p className="text-white">12+ Years of Experience in the Industry more than 100 completed projects in more than ten nations knowledge of website design, usability, and app development We recognise your discomforts. Timely delivery and quality assurance With a helpful and amiable support staff, we are subject matter experts and maintain affordability.</p>
 				</div>
 			</section>
 			<section>
@@ -242,8 +207,58 @@ const Home = () => {
 						</tr>
 					</table>
 				</div>
-				<div className="sec_2 py-5">
-					<div className="container d-flex justify-content-center align-items-center">
+				<div class="d-flex flex-column justify-content-center w-100 h-100">
+
+					<div className="background_gradiant_color d-flex flex-column justify-content-center align-items-center">
+						<div className="btn-group my-5">
+						<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://flutter.dev/"><img className="img-fluid tech_img" alt="logo1" src={flutter} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.python.org/"><img className="img-fluid tech_img" alt="logo1" src={python} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://react.dev/"><img className="img-fluid tech_img" alt="logo1" src={react} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://getbootstrap.com/"><img className="img-fluid tech_img" alt="logo1" src={bootstrap} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://laravel.com/"><img className="img-fluid tech_img" alt="logo1" src={laravel} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://angular.dev/"><img className="img-fluid tech_img" alt="logo1" src={angular} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4 ">
+										<a href="https://nodejs.org/en"><img className="img-fluid tech_img" alt="logo1" src={node} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.java.com/en/"><img className="img-fluid tech_img" alt="logo1" src={java} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://ai.google/"><img className="img-fluid tech_img" alt="logo1" src={ai} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://cplusplus.com/"><img className="img-fluid tech_img" alt="logo1" src={cplus} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.mongodb.com/"><img className="img-fluid tech_img" alt="logo1" src={mongodb} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.javascript.com/"><img className="img-fluid tech_img" alt="logo1" src={javascript} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.mysql.com/"><img className="img-fluid tech_img" alt="logo1" src={mysql} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://tailwindcss.com/"><img className="img-fluid tech_img" alt="logo1" src={tailwind} /></a>
+									</div>
+									<div className="col-md-3 col-4 col-lg-4">
+										<a href="https://www.odoo.com/"><img className="img-fluid tech_img" alt="logo1" src={odoo} /></a>
+									</div>
+								</div>
+						</div>
 					</div>
 				</div>
 			</section>
