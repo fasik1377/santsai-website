@@ -164,14 +164,14 @@ const Home = () => {
 					<div className="row gy-5 d-flex align-items-center justify-content-evenly mt-0">
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><BusinessIcon /></div>
+								<div className="shp"><a href="https://medrectech.com/solution/mobile-solution" style={{color:"#8B0000"}}><BusinessIcon /></a></div>
 								<p className="mb-2 mt-4"><b>Mobility Solutions</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">We provide end-to-end services for iOS and Android mobile applications. We can assist you in developing software and apps for mobile devices.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><WebIcon /></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/Web_application" style={{color:"#8B0000"}}><WebIcon /></a></div>
 								<p className="mb-2 mt-4"><b>Web Applications</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">Advanced web development services with a focus on results. We are skilled in creating customised web applications of all kinds.
 								</p>
@@ -179,14 +179,14 @@ const Home = () => {
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><ECommerce /></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/E-commerce" style={{color:"#8B0000"}}><ECommerce /></a></div>
 								<p className="mb-2 mt-4"><b>E-Commerce</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">With a track record of creating profitable online stores, we specialise in eCommerce store development and conversion optimisation.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><UI /></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/User_interface" style={{color:"#8B0000"}}><UI /></a></div>
 								<p className="mb-2 mt-4"><b>UI/UX Design</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">We design user interfaces for your web or mobile applications so that you can take advantage of the greatest technical resources to maintain business growth.
 								</p>
@@ -199,11 +199,9 @@ const Home = () => {
 				<div className="col-12 col-md-9 col-lg-6 container d-flex align-items-center">
 					<table>
 						<tr>
-							<p className="display-6 mb-1 fw-bold our">Our <span className="span_portfolio">Portfolio</span> </p>
+							<p className="display-6 mb-1 fw-bold our">Technology at a <span className="span_portfolio">Glance</span> </p>
 						</tr>
-						<tr>
-							<p className="paragraph_1">Obtain a stunningly designed website with an excellent</p>
-							<p className="paragraph_2">user experience and a design strategy that is conversion-focused.</p>
+						<tr><p className="text-muted">Obtain a stunningly designed website with an excellent user experience and a design strategy that is conversion-focused.</p>
 						</tr>
 					</table>
 				</div>
@@ -211,53 +209,53 @@ const Home = () => {
 
 					<div className="background_gradiant_color d-flex flex-column justify-content-center align-items-center">
 						<div className="btn-group my-5">
-						<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://flutter.dev/"><img className="img-fluid tech_img" alt="logo1" src={flutter} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.python.org/"><img className="img-fluid tech_img" alt="logo1" src={python} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://react.dev/"><img className="img-fluid tech_img" alt="logo1" src={react} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://getbootstrap.com/"><img className="img-fluid tech_img" alt="logo1" src={bootstrap} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://laravel.com/"><img className="img-fluid tech_img" alt="logo1" src={laravel} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://angular.dev/"><img className="img-fluid tech_img" alt="logo1" src={angular} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4 ">
-										<a href="https://nodejs.org/en"><img className="img-fluid tech_img" alt="logo1" src={node} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.java.com/en/"><img className="img-fluid tech_img" alt="logo1" src={java} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://ai.google/"><img className="img-fluid tech_img" alt="logo1" src={ai} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://cplusplus.com/"><img className="img-fluid tech_img" alt="logo1" src={cplus} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.mongodb.com/"><img className="img-fluid tech_img" alt="logo1" src={mongodb} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.javascript.com/"><img className="img-fluid tech_img" alt="logo1" src={javascript} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.mysql.com/"><img className="img-fluid tech_img" alt="logo1" src={mysql} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://tailwindcss.com/"><img className="img-fluid tech_img" alt="logo1" src={tailwind} /></a>
-									</div>
-									<div className="col-md-3 col-4 col-lg-4">
-										<a href="https://www.odoo.com/"><img className="img-fluid tech_img" alt="logo1" src={odoo} /></a>
-									</div>
+							<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://flutter.dev/"><img className="img-fluid tech_img" alt="logo1" src={flutter} /></a>
 								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.python.org/"><img className="img-fluid tech_img" alt="logo1" src={python} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://react.dev/"><img className="img-fluid tech_img" alt="logo1" src={react} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://getbootstrap.com/"><img className="img-fluid tech_img" alt="logo1" src={bootstrap} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://laravel.com/"><img className="img-fluid tech_img" alt="logo1" src={laravel} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://angular.dev/"><img className="img-fluid tech_img" alt="logo1" src={angular} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4 ">
+									<a href="https://nodejs.org/en"><img className="img-fluid tech_img" alt="logo1" src={node} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.java.com/en/"><img className="img-fluid tech_img" alt="logo1" src={java} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://ai.google/"><img className="img-fluid tech_img" alt="logo1" src={ai} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://cplusplus.com/"><img className="img-fluid tech_img" alt="logo1" src={cplus} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.mongodb.com/"><img className="img-fluid tech_img" alt="logo1" src={mongodb} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.javascript.com/"><img className="img-fluid tech_img" alt="logo1" src={javascript} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.mysql.com/"><img className="img-fluid tech_img" alt="logo1" src={mysql} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://tailwindcss.com/"><img className="img-fluid tech_img" alt="logo1" src={tailwind} /></a>
+								</div>
+								<div className="col-md-3 col-4 col-lg-4">
+									<a href="https://www.odoo.com/"><img className="img-fluid tech_img" alt="logo1" src={odoo} /></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

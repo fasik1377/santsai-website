@@ -7,7 +7,7 @@ const Scards = (props) => {
   return (
       <div className="col-md-4 col-lg-4 mb-3 text-center">
         <div className="box_border col-lg-9 p-3 pt-4 m-auto rounded">
-          <img src={props.scardimage} className="img-fluid mb-2" alt="cards" width="20%" />
+        <a href={props.linked}><img src={props.scardimage} className="img-fluid mb-2" alt="cards" width="20%" /></a>  
           <p className="my-2">{props.scardtitle}</p>
           <p className="text-muted text-left text-xl-center text-lg-center">{props.scarddesc}</p>
         </div>
@@ -35,6 +35,7 @@ const Service = () => {
               Data.map((val, ind) => {
                 return <Scards key={ind}
                   scardimage={val.scardimage}
+                  linked={val.linked}
                   scardtitle={val.scardtitle}
                   scarddesc={val.scarddesc}
                 />
