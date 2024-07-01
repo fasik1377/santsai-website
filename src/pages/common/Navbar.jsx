@@ -36,6 +36,9 @@ const Navbar = () => {
 								<li className="nav-item">
 									<NavLink exact className="nav-link" to="/contact"><span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>Contact</NavLink>
 								</li>
+								<li className="nav-item">
+									<NavLink exact className="nav-link" to="/signin"><span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>Admin</NavLink>
+								</li>
 								<Button className="btn p-8 btn_custom col-lg-5 col-md-5 col-6" component={Link} to="/appointment">
 								Book Appointment With Us
 								</Button>
