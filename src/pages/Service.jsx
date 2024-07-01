@@ -1,30 +1,31 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Secheader from "./common/Secondaryheader";
 import Data from "../data/Servicesdata";
 
 const Scards = (props) => {
   return (
-      <div className="col-md-4 col-lg-4 mb-3 text-center">
+    <div className="col-md-4 col-lg-4 mb-3 text-center">
+      <a href={props.linked} className="service_anchor">
         <div className="box_border col-lg-9 p-3 pt-4 m-auto rounded">
-        <a href={props.linked}><img src={props.scardimage} className="img-fluid mb-2" alt="cards" width="20%" /></a>  
-          <p className="my-2">{props.scardtitle}</p>
+          <img src={props.scardimage} className="img-fluid mb-2" alt="cards" width="20%" />
+          <p className="my-2" style={{color:"black"}}>{props.scardtitle}</p>
           <p className="text-muted text-left text-xl-center text-lg-center">{props.scarddesc}</p>
-        </div>
-      </div>
-    );
+        </div></a>
+    </div>
+  );
 };
 
 const Service = () => {
   return (
     <>
 
-      <Secheader 
-        sectitle="Services" 
-        secdesc="Our services are listed below" 
+      <Secheader
+        sectitle="Services"
+        secdesc="Our services are listed below"
       />
 
-      <section> 
+      <section>
         <div className="container mx-auto py-5">
           <div className="mb-5 text-center">
             <p className="display-6 mb-1">Services We Provide</p>
