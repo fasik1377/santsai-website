@@ -397,3 +397,57 @@ form {
   display: block;
   text-decoration: none;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+*{
+  margin:0;
+   font-family: 'Nunito Sans', sans-serif;  
+}
+.whybuy{
+  margin-left: 350px;
+  background-color:white;
+  display:flex;
+  flex-direction:row;
+  color:black;
+  padding:5%;
+  font-size:120%;
+  height: 100vh;
+}
+.fa-bolt{
+  font-size:400%;
+  margin-bottom:20px;
+}
+.fa-university{
+  font-size:400%;
+  margin-bottom:20px;
+}
+.fa-heart{
+  font-size:400%;
+  margin-bottom:20px;
+}
+.brief1{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content: center;
+  padding:2%;
+}
+.brief2{
+   padding:4%;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
+.brief3{
+   padding:2%;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}

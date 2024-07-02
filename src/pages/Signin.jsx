@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button';
 
 class Signin extends Component {
     render() {
@@ -27,12 +29,7 @@ class Signin extends Component {
 
                             />
                         </div>
-                        <input
-                            type="submit"
-                            value="LOGIN"
-                            className="sign_btn"
-
-                        />
+                        <Button type='submit' className='btn p-8 btn_custom col-lg-5 col-md-5 col-6' component={Link} to="/adminMain">LOGIN</Button>
                     </form>
                 </div>
             </div>
