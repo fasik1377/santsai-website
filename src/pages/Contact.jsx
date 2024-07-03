@@ -3,6 +3,7 @@ import Secheader from "./common/Secondaryheader"
 import CallOutlinedIcon from '@material-ui/icons/CallOutlined';
 import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
+import LegalSupport from '@material-ui/icons/ContactPhone';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -76,9 +77,11 @@ const Contact = () => {
 									You can contact our head office<br /><br />
 									<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+91-8805587310<br /><br />
 									<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>info@santcorporation.com<br /><br />
-									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005</div> <div class="col-6 mt-3"><table><tr>Corporate ID</tr><tr>CIN U62099JH2023PTC020031<tr></tr>GST 20ABKCS2863B1ZP</tr><tr>IEC ABKCS2863B</tr></table> 
-										
-										
+									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005</div> <div class="col-6 mt-3"><table><tr>Corporate ID</tr><tr>CIN U62099JH2023PTC020031<tr></tr>GST 20ABKCS2863B1ZP</tr><tr>IEC ABKCS2863B</tr></table>
+										 </div></div>
+									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LegalSupport /></span><b>Legal support</b> <table><tr>B-300 Saraswati Vihar,Pitampura, New Delhi-110034</tr><tr>contact@legalraasta.com
+									<tr></tr>+91-8750008585</tr></table> 
+									</div> <div class="col-6 mt-3">
 										 </div></div>
 								</p>
 
