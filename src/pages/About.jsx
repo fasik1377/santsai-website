@@ -28,7 +28,7 @@ const About = () => {
             <p className="display-6 mb-1">Happy to have you here!</p><br />
             <p className="text-muted"><b>We are a software development company from India helping enterprise businesses in their digital transition through our suite of web and mobile application services.</b></p>
           </div>
-          <p>Santsai Corporation Pvt. Ltd. is a Hyderabad-based Web development company in India specialized in delivering quality, cost effective, user friendly and result-oriented web designing, website development, mobile application development and e-commerce and online marketing (SEO and SEM) solutions for a global clientele. Our professional, creative and expert designing team guided by customer centric approach helps you turn your website in a sales engine.
+          <p>Santsai Corporation Pvt. Ltd. is a Jamshedpur (Tatanagar) based Web development company in India specialized in delivering quality, cost effective, user friendly and result-oriented web designing, website development, mobile application development and e-commerce and online marketing (SEO and SEM) solutions for a global clientele. Our professional, creative and expert designing team guided by customer centric approach helps you turn your website in a sales engine.
 
             We have delivered innovative and unique mobile application, web designing and development solutions of varying complexities to customers all over the world. Satisfaction of our clients has been our top most priority since our inception as a website design and development company.</p>
           <p></p>

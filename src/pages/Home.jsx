@@ -36,8 +36,47 @@ const Home = () => {
 	return (
 		<>
 			<section className="sec_1">
-				<div className="sec_bg header_height d-flex align-items-center">
+				<div className="sec_bg_home">
 					<div className="container banner_h">
+						<div class="eye"></div>
+						<div class="circle-1"></div>
+						<div class="circle-2"></div>
+						<div class="circle-3"></div>
+						<div class="circle-4"></div>
+						<div class="circle-5"></div>
+						<div class="circle-6"></div>
+						<div class="circle-7"></div>
+						<div class="circle-8"></div>
+						<div class="circle-9"></div>
+						<div class="circle-10"></div>
+						<div class="circle-11"></div>
+						<div class="circle-12"></div>
+						<div class="circle-13"></div>
+						<div class="circle-14"></div>
+
+						<div class="glitch"></div>
+
+						<div class="fragment-1"></div>
+						<div class="fragment-2"></div>
+						<div class="fragment-3"></div>
+
+
+						<svg width="190" height="190" viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<clipPath id='bagel1'>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M95 190C147.467 190 190 147.467 190 95C190 42.533 147.467 0 95 0C42.533 0 0 42.533 0 95C0 147.467 42.533 190 95 190ZM95 120C108.807 120 120 108.807 120 95C120 81.1929 108.807 70 95 70C81.1929 70 70 81.1929 70 95C70 108.807 81.1929 120 95 120Z" />
+								</clipPath>
+								<clipPath id='bagel2'>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M71 142C110.212 142 142 110.212 142 71C142 31.7878 110.212 0 71 0C31.7878 0 0 31.7878 0 71C0 110.212 31.7878 142 71 142ZM71 139C108.555 139 139 108.555 139 71C139 33.4446 108.555 3 71 3C33.4446 3 3 33.4446 3 71C3 108.555 33.4446 139 71 139Z" />
+								</clipPath>
+								<clipPath id='bagel3'>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M60 120C93.1372 120 120 93.1372 120 60C120 26.8628 93.1372 0 60 0C26.8628 0 0 26.8628 0 60C0 93.1372 26.8628 120 60 120ZM60 115C90.3757 115 115 90.3757 115 60C115 29.6243 90.3757 5 60 5C29.6243 5 5 29.6243 5 60C5 90.3757 29.6243 115 60 115Z" />
+								</clipPath>
+								<clipPath id='bagel4'>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M38 76C58.9868 76 76 58.9868 76 38C76 17.0132 58.9868 0 38 0C17.0132 0 0 17.0132 0 38C0 58.9868 17.0132 76 38 76ZM38 72C56.7777 72 72 56.7776 72 38C72 19.2224 56.7777 4 38 4C19.2223 4 4 19.2224 4 38C4 56.7776 19.2223 72 38 72Z" />
+								</clipPath>
+							</defs>
+						</svg>
 						<BannerAnim prefixCls="banner-user" autoPlay>
 							<Element
 								prefixCls="banner-user-elem"
@@ -50,18 +89,15 @@ const Home = () => {
 										background: '#364D79',
 									}}
 								/>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-									<table>
-										<tr>
-											<td>Develop <span className="deve">Mobile Apps for </span></td></tr>
-										<tr><td></td></tr></table>Profitability, Productivity, and Other Purposes.
+								<TweenOne className="banner-user-title tween_width" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Develop Mobile Apps for Profitability, Productivity, and Other Purposes.</b>	
 								</TweenOne>
-								<TweenOne className="banner-user-text"
+								<TweenOne className="banner-user-text tween_width"
 									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
 								>
-									We provide end-to-end services for iOS and Android mobile applications.
-									<br />
-									We can assist you in developing software and apps for mobile devices.
+									<p className="tween_padding">We provide end-to-end services for iOS and Android mobile applications.
+										<br />
+										We can assist you in developing software and apps for mobile devices.</p>
 								</TweenOne>
 							</Element>
 							<Element
@@ -77,18 +113,17 @@ const Home = () => {
 										}}
 									/>
 								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-									<table>
-										<tr>
-											<td>Developing <span className="deve">Pixel-Perfect Websites</span></td></tr>
-										<tr><td></td></tr></table>With a Splash of Originality
+								<TweenOne className="banner-user-title tween_width" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Developing Pixel-Perfect Websites
+								With a Splash of Originality</b>	
 								</TweenOne>
-								<TweenOne className="banner-user-text"
+								<TweenOne className="banner-user-text tween_width tween_padding"
 									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
 								>
-									We design stunningly distinctive websites
-									<br />
-									that captivate visitors.
+									<p className="tween_paddings">
+										We design stunningly distinctive websites
+										<br />
+										that captivate visitors.</p>
 								</TweenOne>
 							</Element>
 							<Element
@@ -105,20 +140,18 @@ const Home = () => {
 										}}
 									/>
 								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-									<table>
-										<tr>
-											<td><span className="deve">Encourage a</span>&nbsp;Genuine Bond.</td></tr>
-										<tr><td></td></tr></table>
+								<TweenOne className="banner-user-title tween_width" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Encourage a &nbsp;Genuine Bond.</b>	
 								</TweenOne>
-								<TweenOne className="banner-user-text"
+								<TweenOne className="banner-user-text tween_width"
 									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
 								>
-									<b>Custom-made,</b> expert,
-									<br />  reasonably priced, and efficient web solutions. <br /><br />
-									Given our exceptional professionalism, we are able to provide our esteemed clients in other countries with excellent
-									<br />
-									web and mobile application development services and solutions that guarantee their satisfaction.
+									<p className="tween_padding">
+										Custom-made, expert,
+										<br />  reasonably priced, and efficient web solutions. <br /><br />
+										Given our exceptional professionalism, we are able to provide our esteemed clients in other countries with excellent
+										<br />
+										web and mobile application development services and solutions that guarantee their satisfaction.</p>
 								</TweenOne>
 							</Element>
 							<Element
@@ -134,15 +167,13 @@ const Home = () => {
 										}}
 									/>
 								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-									<table>
-										<tr>
-											<td>Incredibly Captivating <span className="deve">Digital Marketing</span></td></tr>
-										<tr><td></td></tr></table><span className="deve">At a Reasonable</span> Price Point.
+								<TweenOne className="banner-user-title tween_width" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Incredibly Captivating Digital Marketing At a Reasonable Price Point.</b>	
 								</TweenOne>
-								<TweenOne className="banner-user-text"
+								<TweenOne className="banner-user-text tween_width"
 									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-								>We create incredible digital marketing strategies to strengthen your brand.
+								>
+								<p className="tween_padding">We create incredible digital marketing strategies to strengthen your brand.</p>	
 									<br />
 								</TweenOne>
 							</Element>
@@ -164,14 +195,14 @@ const Home = () => {
 					<div className="row gy-5 d-flex align-items-center justify-content-evenly mt-0">
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><a href="https://medrectech.com/solution/mobile-solution" style={{color:"#8B0000"}}><BusinessIcon /></a></div>
+								<div className="shp"><a href="https://medrectech.com/solution/mobile-solution" style={{ color: "#8B0000" }}><BusinessIcon /></a></div>
 								<p className="mb-2 mt-4"><b>Mobility Solutions</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">We provide end-to-end services for iOS and Android mobile applications. We can assist you in developing software and apps for mobile devices.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><a href="https://en.wikipedia.org/wiki/Web_application" style={{color:"#8B0000"}}><WebIcon /></a></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/Web_application" style={{ color: "#8B0000" }}><WebIcon /></a></div>
 								<p className="mb-2 mt-4"><b>Web Applications</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">Advanced web development services with a focus on results. We are skilled in creating customised web applications of all kinds.
 								</p>
@@ -179,14 +210,14 @@ const Home = () => {
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><a href="https://en.wikipedia.org/wiki/E-commerce" style={{color:"#8B0000"}}><ECommerce /></a></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/E-commerce" style={{ color: "#8B0000" }}><ECommerce /></a></div>
 								<p className="mb-2 mt-4"><b>E-Commerce</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">With a track record of creating profitable online stores, we specialise in eCommerce store development and conversion optimisation.</p>
 							</div>
 						</div>
 						<div className="col-md-4 col-lg-3 text-center">
 							<div className="box_border position-relative rounded pt-5 pb-3 px-3">
-								<div className="shp"><a href="https://en.wikipedia.org/wiki/User_interface" style={{color:"#8B0000"}}><UI /></a></div>
+								<div className="shp"><a href="https://en.wikipedia.org/wiki/User_interface" style={{ color: "#8B0000" }}><UI /></a></div>
 								<p className="mb-2 mt-4"><b>UI/UX Design</b></p>
 								<p className="text-muted text-left text-xl-center text-lg-center">We design user interfaces for your web or mobile applications so that you can take advantage of the greatest technical resources to maintain business growth.
 								</p>
@@ -197,7 +228,7 @@ const Home = () => {
 			</section>
 			<section>
 				<div className="col-12 col-md-9 col-lg-6 container d-flex align-items-center">
-					<table>
+					<table className="tween_width">
 						<tr>
 							<p className="display-6 mb-1 fw-bold our">Technology at a <span className="span_portfolio">Glance</span> </p>
 						</tr>
