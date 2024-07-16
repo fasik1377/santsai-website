@@ -77,10 +77,18 @@ const Contact = () => {
 									You can contact our head office<br /><br />
 									<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+91-8805587310<br /><br />
 									<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>info@santcorporation.com<br /><br />
-									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span>H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005</div> <div class="col-6 mt-3"><table><tr>Corporate ID</tr><tr>CIN U62099JH2023PTC020031<tr></tr>GST 20ABKCS2863B1ZP</tr><tr>IEC ABKCS2863B</tr></table>
+									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span><b>Location</b>
+									<ul className="contact_list">
+										<li>&nbsp; H. No. 75, River View Colony</li>
+										<li>&nbsp; Anil Main Road,Uliyan Kadma,</li>
+										<li>&nbsp; Jamshedpur, Jharkhand 831005</li>
+										</ul></div> <div class="col-6 mt-3"><table><tr><b>Corporate ID</b></tr><tr>CIN U62099JH2023PTC020031<tr></tr>GST 20ABKCS2863B1ZP</tr><tr>IEC ABKCS2863B</tr></table>
 										 </div></div>
-									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LegalSupport /></span><b>Legal support</b> <table><tr>B-300 Saraswati Vihar,Pitampura, New Delhi-110034</tr><tr>contact@legalraasta.com
-									<tr></tr>+91-8750008585</tr></table> 
+									<div className="row justify-content-start"><div class="col-8 mt-3"><span className="m-2 ml-0 hdrcolor"><LegalSupport /></span><b>Legal support</b> <ul className="contact_list">
+										<li>&nbsp; B-300 Saraswati Vihar, Pitampura,</li>
+										<li>&nbsp; New Delhi-110034</li>
+										<li>&nbsp; contact@legalraasta.com</li>
+										<li>&nbsp; +91-8750008585</li></ul>
 									</div> <div class="col-6 mt-3">
 										 </div></div>
 								</p>

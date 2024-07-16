@@ -90,7 +90,7 @@ const Home = () => {
 									}}
 								/>
 								<TweenOne className="banner-user-title tween_width" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Develop Mobile Apps for Profitability, Productivity, and Other Purposes.</b>	
+								<b>Develop Mobile Apps for Profitability, Productivity, and Other Purposes</b>	
 								</TweenOne>
 								<TweenOne className="banner-user-text tween_width"
 									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
