@@ -4,6 +4,7 @@
 @import "../../node_modules/bootstrap/scss/_variables.scss";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -34,14 +35,14 @@ html {
 
 	@include media-breakpoint-down(md) {
 		.navscroll {
-			background-color: #121212 !important;
+			//background-color: #121212 !important;
 			color: white;
 		}
 	}
 
 	@include media-breakpoint-between(md, lg) {
 		.navscroll {
-			background-color: #121212 !important;
+			//background-color: #121212 !important;
 			color: white;
 		}
 	}
@@ -79,6 +80,19 @@ html {
 
 footer {
 	background-color: #8B0000 !important;
+}
+
+.nav_background {
+	//background-image: linear-gradient(#8b9da9, #fff6e4);
+	//box-shadow: inset 0 0 100px hsla(0, 0%, 0%, .3);
+	
+	//border:0.5px solid #8b9da9;
+	//border-left: solid transparent;
+	//border-right: solid transparent;
+}
+
+.text_color {
+	color: red;
 }
 
 .anchor {
@@ -299,7 +313,7 @@ $white: #ffffff;
 .snip1534 {
 	width: 100%;
 	height: auto;
-	display:block;
+	display: block;
 	//width: 1000px;
 	//height: 400px;
 	//color: $white;
