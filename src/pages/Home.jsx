@@ -35,109 +35,155 @@ const Home = () => {
 
 	return (
 		<>
-			<section className="sec">
+			<section className="sec"><div class="container">
+
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+				<div class="confetti"></div>
+
+			</div>
 				<div className="sec_bg">
-						<BannerAnim prefixCls="banner-user" autoPlay>
-							<Element
-								prefixCls="banner-user-elem"
-								key="0"
+					<BannerAnim prefixCls="banner-user" autoPlay>
+						<Element
+							prefixCls="banner-user-elem"
+							key="0"
+						>
+							<BgElement
+								key="bg"
+								className="bg_1"
+								style={{
+									background: '#364D79',
+								}}
+							/>
+							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Develop Mobile Apps for Profitability, </b> <br /> <b> Productivity, and Other Purposes</b>
+							</TweenOne>
+							<TweenOne className="banner-user-text"
+								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
 							>
+								<p className="banner_sub_title">We provide end-to-end services for iOS and Android mobile applications.
+									<br />
+									We can assist you in developing software and apps for mobile devices.</p>
+							</TweenOne>
+						</Element>
+						<Element
+							prefixCls="banner-user-elem"
+							key="1"
+						>
+							<div className="bg_imgs">
 								<BgElement
 									key="bg"
-									className="bg_1"
+									className="bg"
 									style={{
-										background: '#364D79',
+										background: '#64CBCC',
 									}}
 								/>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Develop Mobile Apps for Profitability, </b> <br /> <b> Productivity, and Other Purposes</b>	
-								</TweenOne>
-								<TweenOne className="banner-user-text"
-									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-								>
-									<p className="banner_sub_title">We provide end-to-end services for iOS and Android mobile applications.
-										<br />
-										We can assist you in developing software and apps for mobile devices.</p>
-								</TweenOne>
-							</Element>
-							<Element
-								prefixCls="banner-user-elem"
-								key="1"
-							>
-								<div className="bg_imgs">
-									<BgElement
-										key="bg"
-										className="bg"
-										style={{
-											background: '#64CBCC',
-										}}
-									/>
-								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
+							</div>
+							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
 								<b>Developing Pixel-Perfect Websites </b> <br /> <b>
-								With a Splash of Originality</b>	
-								</TweenOne>
-								<TweenOne className="banner-user-text"
-									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-								>
-									<p className="banner_sub_title">
-										We design stunningly distinctive websites
-										<br />
-										that captivate visitors.</p>
-								</TweenOne>
-							</Element>
-							<Element
-								prefixCls="banner-user-elem"
-								key="1"
+									With a Splash of Originality</b>
+							</TweenOne>
+							<TweenOne className="banner-user-text"
+								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
 							>
-								<div className="bg_imgs">
-
-									<BgElement
-										key="bg"
-										className="bg"
-										style={{
-											background: '#64CBCC',
-										}}
-									/>
-								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Encourage a &nbsp;Genuine Bond.</b>	
-								</TweenOne>
-								<TweenOne className="banner-user-text"
-									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-								>
-									<p className="banner_sub_title">
-										Custom-made, expert,
-										<br />  reasonably priced, and efficient web solutions. <br /><br />
-										Given our exceptional professionalism, we are able to provide our esteemed clients in other countries with excellent
-										<br />
-										web and mobile application development services and solutions that guarantee their satisfaction.</p>
-								</TweenOne>
-							</Element>
-							<Element
-								prefixCls="banner-user-elem"
-								key="1"
-							>
-								<div className="bg_imgs">
-									<BgElement
-										key="bg"
-										className="bg"
-										style={{
-											background: '#64CBCC',
-										}}
-									/>
-								</div>
-								<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Incredibly Captivating Digital Marketing </b> <br /> <b> At a Reasonable Price Point.</b>	
-								</TweenOne>
-								<TweenOne className="banner-user-text"
-									animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-								>
-								<p className="banner_sub_title">We create incredible digital marketing strategies to strengthen your brand.</p>	
+								<p className="banner_sub_title">
+									We design stunningly distinctive websites
 									<br />
-								</TweenOne>
-							</Element>
-						</BannerAnim>
+									that captivate visitors.</p>
+							</TweenOne>
+						</Element>
+						<Element
+							prefixCls="banner-user-elem"
+							key="1"
+						>
+							<div className="bg_imgs">
+
+								<BgElement
+									key="bg"
+									className="bg"
+									style={{
+										background: '#64CBCC',
+									}}
+								/>
+							</div>
+							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Encourage a &nbsp;Genuine Bond.</b>
+							</TweenOne>
+							<TweenOne className="banner-user-text"
+								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+							>
+								<p className="banner_sub_title">
+									Custom-made, expert,
+									<br />  reasonably priced, and efficient web solutions. <br /><br />
+									Given our exceptional professionalism, we are able to provide our esteemed clients in other countries with excellent
+									<br />
+									web and mobile application development services and solutions that guarantee their satisfaction.</p>
+							</TweenOne>
+						</Element>
+						<Element
+							prefixCls="banner-user-elem"
+							key="1"
+						>
+							<div className="bg_imgs">
+								<BgElement
+									key="bg"
+									className="bg"
+									style={{
+										background: '#64CBCC',
+									}}
+								/>
+							</div>
+							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
+								<b>Incredibly Captivating Digital Marketing </b> <br /> <b> At a Reasonable Price Point.</b>
+							</TweenOne>
+							<TweenOne className="banner-user-text"
+								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+							>
+								<p className="banner_sub_title">We create incredible digital marketing strategies to strengthen your brand.</p>
+								<br />
+							</TweenOne>
+						</Element>
+					</BannerAnim>
 				</div>
 			</section>
 
