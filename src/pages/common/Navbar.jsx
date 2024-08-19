@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <>
       <div className="container-fluid navigation_bar nav_background">
-        <nav className="navscroll navbar fixed-top navbar-expand-lg navbar-light py-2 px-3">
-          <div className="container">
+        <nav className="navscroll navbar fixed-top navbar-expand-lg navbar-light py-2 px-3 header_background">
+          <div className="container ">
             <NavLink className="navbar-brand" to="/">
               <img src={logo} alt="logo1" className="img-fluid" width="160" />
             </NavLink>
@@ -26,7 +26,7 @@ const Navbar = () => {
               </span>
             </button>
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul className="navbar-nav ms-auto nav_background">
+              <ul className="navbar-nav ms-auto">
                 <li className="nav-item active navigation_bar">
                   <NavLink exact className="nav-link" to="/">
                     <p className="text-black"><span className="d-lg-none d-xl-none mr-3 navigation_bar text-black"><HomeIcon /></span>
