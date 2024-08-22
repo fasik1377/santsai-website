@@ -7,6 +7,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import PeopleIcon from '@material-ui/icons/People';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import AdminIcon from '@material-ui/icons/AccountCircle';
+import BlogIcon from '@material-ui/icons/Book';
 import WorkIcon from '@material-ui/icons/Work';
 import DvrIcon from '@material-ui/icons/Dvr';
 import Button from '@material-ui/core/Button';
@@ -55,6 +56,12 @@ const Navbar = () => {
                   <NavLink exact className="nav-link" to="/contact"><p className="text-black">
                     <span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>
                     Contact</p>
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink exact className="nav-link" to="/blog"><p className="text-black">
+                    <span className="d-lg-none d-xl-none mr-3"><BlogIcon /></span>
+                    Blog</p>
                   </NavLink>
                 </li>
                 <li className="nav-item">
