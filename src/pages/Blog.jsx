@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useCollapse } from 'react-collapsed'
 import Secheader from "./common/Secondaryheader";
 //import Data from "../data/Blogdata";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import blog1 from "../images/blogs/blog1.jpg";
 import blog2 from "../images/blogs/blog2.jfif";
 import blog3 from "../images/blogs/blog3.jfif";
@@ -206,11 +207,11 @@ const Blog = () => {
                 <div className="sidebar-item categories">
                   <ul>
                     <li><a className="anchor_style" href="#">General <span>(25)</span></a></li>
-                    <li><a className="anchor_style" href="#">Lifestyle <span>(12)</span></a></li>
-                    <li><a className="anchor_style" href="#">Travel <span>(5)</span></a></li>
+                    <li><a className="anchor_style" href="#">AI <span>(12)</span></a></li>
+                    <li><a className="anchor_style" href="#">Biotech <span>(5)</span></a></li>
                     <li><a className="anchor_style" href="#">Design <span>(22)</span></a></li>
                     <li><a className="anchor_style" href="#">Creative <span>(8)</span></a></li>
-                    <li><a className="anchor_style" href="#">Educaion <span>(14)</span></a></li>
+                    <li><a className="anchor_style" href="#">Software Development <span>(14)</span></a></li>
                   </ul>
                 </div>
 

@@ -794,7 +794,7 @@ form {
 }
 
 .header_background {
-	background: linear-gradient(to top, #e9eef1 0%, #eef5f8 100%);
+	background: linear-gradient(to top, #eff4f8 0%, #cddce2 100%);
 }
 
 .blog {
@@ -1304,4 +1304,14 @@ form {
 
   .anchor_style {
 	text-decoration: none
+  }
+
+  .search_icon {
+	width: 20px;
+	height: 20px;
+  }
+
+  .search_button {
+	width: 60px;
+	height: 30px;
   }

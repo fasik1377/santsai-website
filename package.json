@@ -12,6 +12,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^5.0.0-alpha1",
+    "bootstrap-icons": "^1.11.3",
     "gh-pages": "^3.2.3",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
