@@ -75,7 +75,7 @@ const Contact = () => {
 								<span className="lead mb-3"><b>Head Office</b></span>
 								<p className="small">
 									You can contact our head office<br /><br />
-									<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+91-8805587310<br /><br />
+									<span className="m-2 ml-0 hdrcolor"><CallOutlinedIcon /></span>+91-8805587310/ 0657-3568866<br /><br />
 									<span className="m-2 ml-0 hdrcolor"><EmailOutlinedIcon /></span>info@santcorporation.com<br /><br />
 									<div className="row justify-content-start"><div class="col-6 mt-3"><span className="m-2 ml-0 hdrcolor"><LocationOnOutlinedIcon /></span><b>Location</b>
 									<ul className="contact_list">

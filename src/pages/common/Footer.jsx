@@ -14,7 +14,7 @@ const Footer = () => {
 					<div className="text-white">
 						<span className="mx-2"><MobileIcon fontSize="medium" /></span>
 					</div>
-					<div className="text-white medium">+91-8805587310</div>
+					<div className="text-white medium">+91-8805587310/ 0657-3568866</div>
 					<div className="text-white">
 						<span className="mx-2"><EmailIcon fontSize="medium" /></span>
 					</div>

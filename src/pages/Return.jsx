@@ -38,7 +38,7 @@ Following the five days, there won't be any refunds. A refund will be credited t
                         <p >Please email us at info@santcorporation.com if you have any questions or suggestions.
                         </p>
                         <p>Email id here: info@santcorporation.com</p>
-                        <p>Contact Number here : +91-8805587310</p>
+                        <p>Contact Number here : +91-8805587310/ 0657-3568866</p>
                         <p>Address : H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005
                         </p>
                     </div>
