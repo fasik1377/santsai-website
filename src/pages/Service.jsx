@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import Secheader from "./common/Secondaryheader";
 import Data from "../data/Servicesdata";
+import axios from "axios"
 
 const Scards = (props) => {
   return (
@@ -17,6 +18,53 @@ const Scards = (props) => {
 };
 
 const Service = () => {
+  const [book, setBook] = useState({
+		name: "The Fault In Our Stars",
+		author: "John Green",
+		img: "https://images-na.ssl-images-amazon.com/images/I/817tHNcyAgL.jpg",
+		price: 250,
+	});
+
+	const initPayment = (data) => {
+    console.log("data: ",data)
+		const options = {
+			key: process.env.REACT_RAZORPAY_KEY ,
+			amount: data.amount,
+			currency: data.currency,
+			name: book.name,
+			description: "Test Transaction",
+			image: book.img,
+			order_id: data.id,
+			handler: async (response) => {
+				try {
+					const verifyUrl = "http://localhost:4000/payment/verify";
+					const { data } = await axios.post(verifyUrl, response);
+					console.log(data);
+				} catch (error) {
+					console.log(error);
+				}
+			},
+			theme: {
+				color: "#3399cc",
+			},
+		};
+		const rzp1 = new window.Razorpay(options);
+		rzp1.open();
+	};
+
+	const handlePayment = async () => {
+		try {
+			const orderUrl = "http://localhost:4000/payment/orders";
+			const { data } = await axios.post(orderUrl, { amount: book.price });
+			console.log(data);
+      if(data.data){
+			initPayment(data.data);
+    }
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
   return (
     <>
 
@@ -50,6 +98,20 @@ const Service = () => {
         <div className="container py-5 text-center">
           <p className="display-6">Not quite sure yet ?</p>
           <p className="text-muted">Why not visit our <NavLink className="text-decoration-none" to="/contact">contact page</NavLink>, we would love to chat with you!</p>
+          <button 
+  onClick={handlePayment} 
+  style={{
+    backgroundColor: 'darkred',
+    color: 'white',
+    fontSize: '20px', // Makes the button bigger
+    padding: '10px 20px', // Increases the size
+    borderRadius: '10px', // Curves the edges
+    border: 'none', // Removes default border
+    cursor: 'pointer' // Changes cursor on hover
+  }}
+>
+  Pay
+</button>
         </div>
       </section>
     </>
