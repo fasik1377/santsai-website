@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState}  from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo-transparent-svg.svg";
@@ -10,9 +10,56 @@ import AdminIcon from '@material-ui/icons/AccountCircle';
 import BlogIcon from '@material-ui/icons/Book';
 import WorkIcon from '@material-ui/icons/Work';
 import DvrIcon from '@material-ui/icons/Dvr';
+import axios from "axios"
+
 import Button from '@material-ui/core/Button';
 
 const Navbar = () => {
+  const [book, setBook] = useState({
+		name: "The Fault In Our Stars",
+		author: "John Green",
+		img: "https://images-na.ssl-images-amazon.com/images/I/817tHNcyAgL.jpg",
+		price: 250,
+	});
+
+	const initPayment = (data) => {
+    console.log("data: ",data)
+		const options = {
+			key: process.env.REACT_RAZORPAY_KEY ,
+			amount: data.amount,
+			currency: data.currency,
+			name: book.name,
+			description: "Test Transaction",
+			image: book.img,
+			order_id: data.id,
+			handler: async (response) => {
+				try {
+					const verifyUrl = "https://santsai-website-back-end-1.onrender.com/payment/verify";
+					const { data } = await axios.post(verifyUrl, response);
+					console.log(data);
+				} catch (error) {
+					console.log(error);
+				}
+			},
+			theme: {
+				color: "#3399cc",
+			},
+		};
+		const rzp1 = new window.Razorpay(options);
+		rzp1.open();
+	};
+  const handlePayment = async () => {
+		try {
+			const orderUrl = "https://santsai-website-back-end-1.onrender.com/payment/orders";
+			const { data } = await axios.post(orderUrl, { amount: book.price });
+			console.log(data);
+      if(data.data){
+			initPayment(data.data);
+    }
+		} catch (error) {
+			console.log(error);
+		}
+	};
   return (
     <>
       <div className="container-fluid navigation_bar nav_background">
@@ -46,12 +93,31 @@ const Navbar = () => {
                     Career</p>
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/about">
-                   <p className="text-black"><span className="d-lg-none d-xl-none mr-3"><PeopleIcon /></span>
-				   About</p> 
-                  </NavLink>
-                </li>
+                <li className="nav-item dropdown group relative">
+  <NavLink
+    exact
+    className="nav-link"
+    to="#"
+    id="navbarDropdown"
+    role="button"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    <p className="text-black">About</p>
+  </NavLink>
+
+  {/* Dropdown Menu */}
+  <div className="dropdown-menu absolute hidden group-hover:block bg-white text-black py-2 shadow-lg">
+    <NavLink className="dropdown-item block px-4 py-2 hover:bg-gray-200" to="/about">
+      About Us
+    </NavLink>
+    <NavLink className="dropdown-item block px-4 py-2 hover:bg-gray-200" to="/case-study">
+      Case Study
+    </NavLink>
+  </div>
+</li>
+
+
                 <li className="nav-item">
                   <NavLink exact className="nav-link" to="/contact"><p className="text-black">
                     <span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>
@@ -70,8 +136,14 @@ const Navbar = () => {
                     Admin</p>
                   </NavLink>
                 </li>
-                <Button className="btn p-8 btn_custom col-lg-5 col-md-5 col-6" component={Link} to="/appointment">
+                <Button className="btn p-8 btn_custom col-lg-4 col-md-4 col-6  m-1" component={Link} to="/appointment">
                   Book Appointment With Us
+                </Button>
+                <Button 
+                  onClick={handlePayment} 
+                  className="btn  btn_custom col-lg-1 col-md-1 col-6 m-1" 
+                >
+                  Pay
                 </Button>
               </ul>
             </div>

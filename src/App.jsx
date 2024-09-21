@@ -16,6 +16,7 @@ import AdminMain from "./pages/AdminMain";
 import Blog from "./pages/Blog";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Return from "./pages/Return.jsx";
+import CaseStudy from "./pages/caseStudy.jsx"
 const App = () => {
 	return (
 		<>
@@ -34,6 +35,7 @@ const App = () => {
 				<Route exact path="/signin" component={Signin} />
 				<Route exact path="/adminMain" component={AdminMain} />
 				<Route exact path="/blog" component={Blog} />
+				<Route exact path="/CaseStudy" component={CaseStudy} />
 				<Redirect to="/" />
 			</Switch>
 			<Footer />
