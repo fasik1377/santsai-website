@@ -34,7 +34,7 @@ const Navbar = () => {
 			order_id: data.id,
 			handler: async (response) => {
 				try {
-					const verifyUrl = "https://santsai-website-back-end-1.onrender.com/payment/verify";
+					const verifyUrl = "http://54.81.228.157:4000/payment/verify";
 					const { data } = await axios.post(verifyUrl, response);
 					console.log(data);
 				} catch (error) {
@@ -50,7 +50,7 @@ const Navbar = () => {
 	};
   const handlePayment = async () => {
 		try {
-			const orderUrl = "https://santsai-website-back-end-1.onrender.com/payment/orders";
+			const orderUrl = "http://54.81.228.157:4000/payment/orders";
 			const { data } = await axios.post(orderUrl, { amount: book.price });
 			console.log(data);
       if(data.data){
@@ -87,35 +87,42 @@ const Navbar = () => {
 				  Services</p> 
                   </NavLink>
                 </li>
+                
                 <li className="nav-item">
                   <NavLink exact className="nav-link" to="/career">
                     <p className="text-black"><span className="d-lg-none d-xl-none mr-3"><WorkIcon /></span>
                     Career</p>
                   </NavLink>
-                </li>
-                <li className="nav-item dropdown group relative">
+                  </li>
+                  <li className="nav-item dropdown">
+  {/* About Link */}
   <NavLink
-    exact
-    className="nav-link"
+    className="nav-link dropdown-toggle"
     to="#"
     id="navbarDropdown"
     role="button"
-    aria-haspopup="true"
+    data-bs-toggle="dropdown"
     aria-expanded="false"
   >
-    <p className="text-black">About</p>
+    About
   </NavLink>
 
-  {/* Dropdown Menu */}
-  <div className="dropdown-menu absolute hidden group-hover:block bg-white text-black py-2 shadow-lg">
-    <NavLink className="dropdown-item block px-4 py-2 hover:bg-gray-200" to="/about">
-      About Us
-    </NavLink>
-    <NavLink className="dropdown-item block px-4 py-2 hover:bg-gray-200" to="/case-study">
-      Case Study
-    </NavLink>
-  </div>
+  {/* Bootstrap Dropdown Menu */}
+  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li>
+      <NavLink className="dropdown-item" to="/about">
+        About Us
+      </NavLink>
+    </li>
+    <li>
+      <NavLink className="dropdown-item" to="/case-study">
+        Case Study
+      </NavLink>
+    </li>
+  </ul>
 </li>
+
+
 
 
                 <li className="nav-item">
