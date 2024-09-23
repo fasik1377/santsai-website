@@ -11,10 +11,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^1.7.2",
     "bootstrap": "^5.0.0-alpha1",
     "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.5",
     "gh-pages": "^3.2.3",
     "jquery": "^3.7.1",
+    "jspdf": "^2.5.2",
     "popper.js": "^1.16.1",
     "rc-banner-anim": "^2.4.5",
     "rc-tween-one": "^3.0.6",
@@ -50,7 +53,10 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.77.4"
+    "postcss": "^8.4.38",
+    "sass": "^1.77.4",
+    "tailwindcss": "^3.4.4"
   }
 }

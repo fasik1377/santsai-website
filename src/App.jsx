@@ -16,31 +16,35 @@ import AdminMain from "./pages/AdminMain";
 import Blog from "./pages/Blog";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Return from "./pages/Return.jsx";
-const App = () => {
-	return (
-		<>
-		<BrowserRouter>
-			<Navbar />
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/about" component={About} />
-				<Route exact path="/service" component={Service} />
-				<Route exact path="/career" component={Career} />
-				<Route exact path="/contact" component={Contact} />
-				<Route exact path="/term" component={Term} />
-				<Route exact path="/privacy" component={Privacy} />
-				<Route exact path="/return" component={Return} />
-				<Route exact path="/appointment" component={Appointment} />
-				<Route exact path="/signin" component={Signin} />
-				<Route exact path="/adminMain" component={AdminMain} />
-				<Route exact path="/blog" component={Blog} />
-				<Redirect to="/" />
-			</Switch>
-			<Footer />
+import CaseStudy from "./pages/caseStudy.jsx";
 
-		</BrowserRouter>
-		</>
-	);
+const App = () => {
+  return (
+    <>
+
+      <BrowserRouter>
+        <Navbar />
+      
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/service" component={Service} />
+          <Route exact path="/career" component={Career} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/term" component={Term} />
+          <Route exact path="/privacy" component={Privacy} />
+          <Route exact path="/return" component={Return} />
+          <Route exact path="/appointment" component={Appointment} />
+          <Route exact path="/signin" component={Signin} />
+          <Route exact path="/adminMain" component={AdminMain} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/case-study" component={CaseStudy} />
+          <Redirect to="/" />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;

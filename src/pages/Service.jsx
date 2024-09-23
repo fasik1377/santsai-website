@@ -17,6 +17,10 @@ const Scards = (props) => {
 };
 
 const Service = () => {
+ 
+
+
+
   return (
     <>
 
@@ -50,6 +54,7 @@ const Service = () => {
         <div className="container py-5 text-center">
           <p className="display-6">Not quite sure yet ?</p>
           <p className="text-muted">Why not visit our <NavLink className="text-decoration-none" to="/contact">contact page</NavLink>, we would love to chat with you!</p>
+          
         </div>
       </section>
     </>
