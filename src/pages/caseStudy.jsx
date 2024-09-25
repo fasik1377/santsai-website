@@ -2,83 +2,77 @@
 import React, { useState, useEffect } from 'react';
 import { jsPDF } from "jspdf";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// Simulate API data
-const mockApiData = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve([
-        {
-          title: "Enhancing User Experience in E-Commerce",
-          description: "A case study on improving the UI/UX of a large-scale e-commerce platform.",
-          client: "E-Com Solutions",
-          technologies: ["Angular", "TypeScript", "Google Cloud", "Kubernetes"],
-          outcome: "Increased conversion rates by 25%.",
-          images: [
-            "11.jpg",
-            "22.jpg",
-            "33.jpg"
-          ]
-        },
-        {
-          title: "Building Scalable Web Applications",
-          description: "A comprehensive case study on building scalable, high-performance web applications.",
-          client: "Santsai Corporation Pvt. Ltd",
-          technologies: ["React", "Node.js", "AWS", "Docker"],
-          outcome: "Improved client efficiency by 40%.",
-          images: [
-            "istockphoto-1349390515-612x612.jpg",
-            "pexels-freestocks-744462.jpg",
-            "pexels-padrinan-1591061.jpg"
-          ]
-        },
-        
-        {
-          title: "Optimizing DevOps Pipelines",
-          description: "A case study on automating and optimizing DevOps pipelines for a tech enterprise.",
-          client: "DevOps Corp.",
-          technologies: ["Jenkins", "Kubernetes", "Azure", "Terraform"],
-          outcome: "Reduced deployment times by 60%.",
-          images: [
-            "44.jpg",
-            "55.jpg",
-            ".jpg"
-          ]
-        }
-      ]);
-    }, 2000); // Simulate network delay
-  });
-};
+import axios from 'axios';
 
 const CaseStudy = () => {
   const [caseStudies, setCaseStudies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const apiUrl = 'http://54.81.228.157:4000/casestudy'; // Replace with your actual API endpoint
 
-  // Fetch the simulated API data
+  // Fetch case studies from API
   useEffect(() => {
-    mockApiData().then(data => {
-      setCaseStudies(data);
-      setLoading(false);
-    });
+    const fetchCaseStudies = async () => {
+      try {
+        const response = await axios.get(apiUrl);
+        setCaseStudies(response.data);
+      } catch (error) {
+        console.error("Error fetching case studies:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCaseStudies();
   }, []);
 
-  // Generate and download PDF
+  // Generate and download PDF with text wrapping
   const downloadPDF = (caseStudy) => {
     const doc = new jsPDF();
-
+    const pageWidth = doc.internal.pageSize.width - 40; // Page width with margins
+    const textOptions = { maxWidth: pageWidth };
+    let verticalOffset = 20; // Initial vertical offset for the first line
+  
     doc.setFontSize(16);
-    doc.text(caseStudy.title, 20, 20);
+    doc.text(caseStudy.title, 20, verticalOffset);
+    verticalOffset += 10; // Add space after title
+  
     doc.setFontSize(12);
-    doc.text(`Client: ${caseStudy.client}`, 20, 30);
-    doc.text("Description:", 20, 40);
-    doc.text(caseStudy.description, 20, 50);
-    doc.text("Technologies Used:", 20, 70);
-    doc.text(caseStudy.technologies.join(", "), 20, 80);
-    doc.text("Outcome:", 20, 100);
-    doc.text(caseStudy.outcome, 20, 110);
-
+    doc.text(`Client: ${caseStudy.client}`, 20, verticalOffset);
+    verticalOffset += 10; // Add space after client
+  
+    doc.text("Overview:", 20, verticalOffset);
+    const overviewText = doc.splitTextToSize(caseStudy.overview, pageWidth);
+    doc.text(overviewText, 20, verticalOffset + 10);
+    verticalOffset += overviewText.length * 7 + 10; // Dynamically adjust vertical offset
+  
+    doc.text("Challenge:", 20, verticalOffset);
+    const challengeText = doc.splitTextToSize(caseStudy.challenge, pageWidth);
+    doc.text(challengeText, 20, verticalOffset + 10);
+    verticalOffset += challengeText.length * 7 + 10;
+  
+    doc.text("Solution:", 20, verticalOffset);
+    const solutionText = doc.splitTextToSize(caseStudy.solution, pageWidth);
+    doc.text(solutionText, 20, verticalOffset + 10);
+    verticalOffset += solutionText.length * 7 + 10;
+  
+    doc.text("Results:", 20, verticalOffset);
+    const resultsText = doc.splitTextToSize(caseStudy.results, pageWidth);
+    doc.text(resultsText, 20, verticalOffset + 10);
+    verticalOffset += resultsText.length * 7 + 10;
+  
+    doc.text("Conclusion:", 20, verticalOffset);
+    const conclusionText = doc.splitTextToSize(caseStudy.conclusion, pageWidth);
+    doc.text(conclusionText, 20, verticalOffset + 10);
+    verticalOffset += conclusionText.length * 7 + 10;
+  
+    doc.text("Technologies Used:", 20, verticalOffset);
+    const technologiesText = doc.splitTextToSize(caseStudy.technologiesUsed.join(", "), pageWidth);
+    doc.text(technologiesText, 20, verticalOffset + 10);
+    
+    // Save the PDF
     doc.save(`${caseStudy.title}.pdf`);
   };
+  
 
   if (loading) {
     return <div className="text-center text-dark">Loading case studies...</div>;
@@ -109,16 +103,19 @@ const CaseStudy = () => {
 
           <div className="card-body" style={{ padding: '1.5rem' }}>
             <h5 className="card-title" style={{ fontWeight: '700', fontSize: '1.5rem', marginBottom: '1rem' }}>{caseStudy.title}</h5>
-            <h6 className="card-subtitle mb-2 text-muted" style={{ marginBottom: '1rem' }}>Client: {caseStudy.client}</h6>
-            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}>{caseStudy.description}</p>
+            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}><strong>Overview:</strong> {caseStudy.overview}</p>
+            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}><strong>Challenge:</strong> {caseStudy.challenge}</p>
+            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}><strong>Solution:</strong> {caseStudy.solution}</p>
+            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}><strong>Results:</strong> {caseStudy.results}</p>
+            <p className="card-text" style={{ fontSize: '1rem', marginBottom: '1rem' }}><strong>Conclusion:</strong> {caseStudy.conclusion}</p>
+
             <h6 style={{ fontWeight: '600' }}>Technologies Used:</h6>
             <ul style={{ paddingLeft: '1rem', marginBottom: '1rem' }}>
-              {caseStudy.technologies.map((tech, i) => (
+              {caseStudy.technologiesUsed.map((tech, i) => (
                 <li key={i} style={{ fontSize: '1rem' }}>{tech}</li>
               ))}
             </ul>
-            <h6 style={{ fontWeight: '600' }}>Outcome:</h6>
-            <p style={{ fontSize: '1rem', marginBottom: '1rem' }}>{caseStudy.outcome}</p>
+
             <button className="btn btn-block" style={{ backgroundColor: '#8B0000', color: 'white', width: '100%', padding: '0.75rem', fontSize: '1rem', fontWeight: '600' }} onClick={() => downloadPDF(caseStudy)}>
               Download Case Study as PDF
             </button>

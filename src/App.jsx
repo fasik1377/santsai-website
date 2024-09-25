@@ -17,6 +17,8 @@ import Blog from "./pages/Blog";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Return from "./pages/Return.jsx";
 import CaseStudy from "./pages/caseStudy.jsx";
+import PaymentCanceledPage from './pages/PaymentCanceledPage.js'
+import PaymentCompletePage from './pages/PaymentCompletePage.js'
 
 const App = () => {
   return (
@@ -39,6 +41,8 @@ const App = () => {
           <Route exact path="/adminMain" component={AdminMain} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/case-study" component={CaseStudy} />
+          <Route exact path="/paypal-completed" component={PaymentCompletePage} />
+          <Route exact path="/paypal-canceld" component={PaymentCanceledPage} />
           <Redirect to="/" />
         </Switch>
         <Footer />

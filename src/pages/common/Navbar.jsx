@@ -1,4 +1,4 @@
-import React,{useState}  from "react";
+import React,{useState, useRef,useEffect}  from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo-transparent-svg.svg";
@@ -11,17 +11,41 @@ import BlogIcon from '@material-ui/icons/Book';
 import WorkIcon from '@material-ui/icons/Work';
 import DvrIcon from '@material-ui/icons/Dvr';
 import axios from "axios"
-
+import PayPal from "../payPal"
+import {  Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
+import { useHistory } from 'react-router-dom';  // Use useHistory in React Router v5
 import Button from '@material-ui/core/Button';
 
 const Navbar = () => {
+  const navigate = useHistory();
+
   const [book, setBook] = useState({
 		name: "The Fault In Our Stars",
 		author: "John Green",
 		img: "https://images-na.ssl-images-amazon.com/images/I/817tHNcyAgL.jpg",
 		price: 250,
 	});
+  const [amount, setamount] = useState(0);
+  const [open, setOpen] = useState(false);
 
+  const handlPayPal= async ()=>{
+    const amounte={
+      amount:amount
+    }
+    const respons= await axios.post('http://54.81.228.157:4000/paypal/create-order',amounte)
+    const url= respons.data.link
+    window.location.href = url
+    
+  }
+  // Function to handle Pay button click (show modal)
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  // Function to close the modal
+  const handleClose = () => {
+    setOpen(false);
+  };
 	const initPayment = (data) => {
     console.log("data: ",data)
 		const options = {
@@ -34,6 +58,7 @@ const Navbar = () => {
 			order_id: data.id,
 			handler: async (response) => {
 				try {
+          
 					const verifyUrl = "http://54.81.228.157:4000/payment/verify";
 					const { data } = await axios.post(verifyUrl, response);
 					console.log(data);
@@ -48,10 +73,14 @@ const Navbar = () => {
 		const rzp1 = new window.Razorpay(options);
 		rzp1.open();
 	};
+
+  const updateamount  = (value)=>{
+    setamount(value)
+  }
   const handlePayment = async () => {
 		try {
 			const orderUrl = "http://54.81.228.157:4000/payment/orders";
-			const { data } = await axios.post(orderUrl, { amount: book.price });
+			const { data } = await axios.post(orderUrl, { amount: amount });
 			console.log(data);
       if(data.data){
 			initPayment(data.data);
@@ -122,9 +151,6 @@ const Navbar = () => {
   </ul>
 </li>
 
-
-
-
                 <li className="nav-item">
                   <NavLink exact className="nav-link" to="/contact"><p className="text-black">
                     <span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>
@@ -146,16 +172,49 @@ const Navbar = () => {
                 <Button className="btn p-8 btn_custom col-lg-4 col-md-4 col-6  m-1" component={Link} to="/appointment">
                   Book Appointment With Us
                 </Button>
+                 
                 <Button 
-                  onClick={handlePayment} 
+                  onClick={handleClickOpen} 
                   className="btn  btn_custom col-lg-1 col-md-1 col-6 m-1" 
                 >
                   Pay
                 </Button>
+
+                
               </ul>
             </div>
           </div>
         </nav>
+        
+        
+        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+        <DialogTitle id="form-dialog-title">Choose Your Payment Method</DialogTitle>
+        <DialogContent>
+        <input 
+          type="number" 
+          onChange={(e) => updateamount(e.target.value)} 
+          placeholder="Enter amount" 
+        />
+          <DialogContentText>Choose your payment method:</DialogContentText>
+
+          {/* Payment method buttons */}
+          <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '20px' }}>
+            <Button variant="outlined" color="secondary" onClick={handlePayment}>
+              Razorpay
+            </Button>
+            <Button variant="outlined" color="secondary" onClick={handlPayPal}>
+              PayPal
+            </Button>
+               
+            
+          </div>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Close
+          </Button>
+        </DialogActions>
+      </Dialog>
       </div>
     </>
   );
