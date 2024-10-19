@@ -96,7 +96,7 @@ const Home = () => {
 									background: '#364D79',
 								}}
 							/>
-							<TweenOne className="banner-user-title text-white" animation={{ y: 30, opacity: 0, type: 'from' }}>
+							<TweenOne className="banner-user-title text-dark" animation={{ y: 30, opacity: 0, type: 'from' }}>
 								<b>Develop Mobile Apps for Profitability, </b> <br /> <b> Productivity, and Other Purposes</b>
 							</TweenOne>
 							<TweenOne className="banner-user-text"
@@ -232,87 +232,81 @@ const Home = () => {
 					</div>
 				</div>
 			</section>
-			<section>
-				<div className="col-12 col-md-9 col-lg-6 container d-flex align-items-center">
-					<table className="">
-						<tr>
-							<p className="display-6 mb-1 fw-bold our">Technology at a <span className="span_portfolio">Glance</span> </p>
-						</tr>
-						<tr><p className="text-muted">Obtain a stunningly designed website with an excellent user experience and a design strategy that is conversion-focused.</p>
-						</tr>
-					</table>
-				</div>
-				<div className="d-flex flex-column justify-content-center w-100 h-100">
+			<section className="container py-5">
+			<div className="row min-vh-10 d-flex justify-content-center align-items-center">
+  <div className="col-12 col-md-9 col-lg-6 text-center">
+    <h2 className="display-6 mb-1 fw-bold">
+      Technology at a <span className="span_portfolio">Glance</span>
+    </h2>
+    <p className="text-muted">
+      Obtain a stunningly designed website with an excellent user experience
+      and a design strategy that is conversion-focused.
+    </p>
+  </div>
+</div>
+  <div className="container-fluid mt-4">
+  <div className="row justify-content-center">
+    <div className="col-12 background_gradiant_color p-4">
+      <div className="row gy-3 gy-md-4 justify-content-center">
+        {[
+          { src: flutter, link: "https://flutter.dev/" },
+          { src: python, link: "https://www.python.org/" },
+          { src: react, link: "https://react.dev/" },
+          { src: bootstrap, link: "https://getbootstrap.com/" },
+          { src: laravel, link: "https://laravel.com/" },
+          { src: angular, link: "https://angular.dev/" },
+          { src: node, link: "https://nodejs.org/en" },
+          { src: java, link: "https://www.java.com/en/" },
+          { src: ai, link: "https://ai.google/" },
+          { src: cplus, link: "https://cplusplus.com/" },
+          { src: mongodb, link: "https://www.mongodb.com/" },
+          { src: javascript, link: "https://www.javascript.com/" },
+          { src: mysql, link: "https://www.mysql.com/" },
+          { src: tailwind, link: "https://tailwindcss.com/" },
+          { src: odoo, link: "https://www.odoo.com/" },
+        ].map((tech, index) => (
+          <div
+            key={index}
+            className="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center"
+          >
+            <a href={tech.link} target="_blank" rel="noopener noreferrer">
+              <img className="img-fluid tech_img" alt="logo" src={tech.src} />
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section>
+  <div className="container mx-auto py-5">
+    <div className="mb-5 text-center">
+      <p className="display-6 mb-1">
+        <b>
+          Our <span className="main_color">Process</span>
+        </b>
+      </p>
+      <p className="text-muted">
+        We take great pride in providing our clients with ideal solutions tailored to their specific issues. 
+        To earn our clients' loyalty as business partners, we provide them with personal service.
+      </p>
+    </div>
 
-					<div className="background_gradiant_color d-flex flex-column justify-content-center align-items-center">
-						<div className="btn-group my-5">
-							<div className="row gy-2 brands_logo d-flex align-items-center justify-content-evenly col-md-7 m-auto">
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://flutter.dev/"><img className="img-fluid tech_img" alt="logo1" src={flutter} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.python.org/"><img className="img-fluid tech_img" alt="logo1" src={python} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://react.dev/"><img className="img-fluid tech_img" alt="logo1" src={react} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://getbootstrap.com/"><img className="img-fluid tech_img" alt="logo1" src={bootstrap} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://laravel.com/"><img className="img-fluid tech_img" alt="logo1" src={laravel} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://angular.dev/"><img className="img-fluid tech_img" alt="logo1" src={angular} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4 ">
-									<a href="https://nodejs.org/en"><img className="img-fluid tech_img" alt="logo1" src={node} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.java.com/en/"><img className="img-fluid tech_img" alt="logo1" src={java} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://ai.google/"><img className="img-fluid tech_img" alt="logo1" src={ai} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://cplusplus.com/"><img className="img-fluid tech_img" alt="logo1" src={cplus} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.mongodb.com/"><img className="img-fluid tech_img" alt="logo1" src={mongodb} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.javascript.com/"><img className="img-fluid tech_img" alt="logo1" src={javascript} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.mysql.com/"><img className="img-fluid tech_img" alt="logo1" src={mysql} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://tailwindcss.com/"><img className="img-fluid tech_img" alt="logo1" src={tailwind} /></a>
-								</div>
-								<div className="col-md-3 col-4 col-lg-4">
-									<a href="https://www.odoo.com/"><img className="img-fluid tech_img" alt="logo1" src={odoo} /></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<div className="container mx-auto py-5">
-					<div className="mb-5 text-center">
-						<p className="display-6 mb-1"><b>Our <span className="main_color">Process</span></b></p>
-						<p className="text-muted">We take great pride in providing our clients with ideal solutions tailored to their specific issues. To earn our clients' loyalty as business partners, we provide them with personal service.</p>
-					</div>
-					<div className="row gy-12 d-flex align-items-center">
-						<div className="col-md-12 col-lg-12 text-center">
-							<div className="snip1534">
-								<img className="img-responsive img-fluid" alt="product1" src={product1} />
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <div className="row gy-4 d-flex align-items-center justify-content-center">
+      <div className="col-12 col-md-8 col-lg-6 text-center">
+        <div className="snip1534">
+          <img
+            className="img-responsive img-fluid"
+            alt="product1"
+            src={product1}
+            style={{ maxWidth: '100%', height: 'auto' }}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 			<section className="bg-light">
 				<div className="container mx-auto py-5">
