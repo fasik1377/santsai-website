@@ -35,51 +35,52 @@ const Home = () => {
 
 	return (
 		<>
-			<section className="sec"><div class="container">
+			<section className="sec">
+			<div className="container">
 
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
 
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
 
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
 
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
-				<div class="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
+				<div className="confetti"></div>
 
 			</div>
 				<div className="sec_bg">
@@ -95,7 +96,7 @@ const Home = () => {
 									background: '#364D79',
 								}}
 							/>
-							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
+							<TweenOne className="banner-user-title text-white" animation={{ y: 30, opacity: 0, type: 'from' }}>
 								<b>Develop Mobile Apps for Profitability, </b> <br /> <b> Productivity, and Other Purposes</b>
 							</TweenOne>
 							<TweenOne className="banner-user-text"
@@ -134,7 +135,7 @@ const Home = () => {
 						</Element>
 						<Element
 							prefixCls="banner-user-elem"
-							key="1"
+							key="2"
 						>
 							<div className="bg_imgs">
 
@@ -162,7 +163,7 @@ const Home = () => {
 						</Element>
 						<Element
 							prefixCls="banner-user-elem"
-							key="1"
+							key="3"
 						>
 							<div className="bg_imgs">
 								<BgElement
@@ -241,7 +242,7 @@ const Home = () => {
 						</tr>
 					</table>
 				</div>
-				<div class="d-flex flex-column justify-content-center w-100 h-100">
+				<div className="d-flex flex-column justify-content-center w-100 h-100">
 
 					<div className="background_gradiant_color d-flex flex-column justify-content-center align-items-center">
 						<div className="btn-group my-5">

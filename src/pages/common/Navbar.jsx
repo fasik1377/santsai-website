@@ -13,11 +13,11 @@ import DvrIcon from '@material-ui/icons/Dvr';
 import axios from "axios"
 import PayPal from "../payPal"
 import {  Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material';
-import { useHistory } from 'react-router-dom';  // Use useHistory in React Router v5
+import { useNavigate } from 'react-router-dom';  // Use useHistory in React Router v5
 import Button from '@material-ui/core/Button';
 
 const Navbar = () => {
-  const navigate = useHistory();
+  const Route = useNavigate();
 
   const [book, setBook] = useState({
 		name: "The Fault In Our Stars",

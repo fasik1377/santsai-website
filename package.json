@@ -4,33 +4,33 @@
   "homepage": "https://main.dzqa186ef6yxk.amplifyapp.com/",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
-    "@emotion/react": "^11.13.0",
+    "@emailjs/browser": "^4.4.1",
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@mui/material": "^5.16.6",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/material": "^6.1.3",
     "@popperjs/core": "^2.11.8",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^1.7.2",
-    "bootstrap": "^5.0.0-alpha1",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "dotenv": "^16.4.5",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^6.2.0",
     "jquery": "^3.7.1",
     "jspdf": "^2.5.2",
     "popper.js": "^1.16.1",
     "rc-banner-anim": "^2.4.5",
     "rc-tween-one": "^3.0.6",
-    "react": "^16.13.1",
+    "react": "^18.3.1",
     "react-banner": "^1.0.3",
     "react-collapsed": "^4.1.2",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "^5.0.1",
-    "react-slideshow-image": "^4.3.1"
+    "react-slideshow-image": "^4.3.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -56,10 +56,10 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "gulp-sass": "^5.1.0",
-    "postcss": "^8.4.38",
-    "sass": "^1.77.4",
-    "tailwindcss": "^3.4.4"
+    "postcss": "^8.4.47",
+    "sass": "^1.79.5",
+    "tailwindcss": "^3.4.14"
   }
 }

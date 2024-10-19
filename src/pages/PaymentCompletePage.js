@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { useHistory } from 'react-router-dom';  // Use useHistory in React Router v5
+import { useNavigate } from 'react-router-dom';  // Use useHistory in React Router v5
 import '../scss/PaymentCompletePage.scss';  // Import Sass for styling
 
 const PaymentCompletePage = () => {
-  const navigate = useHistory();
+  const Route = useNavigate();
 
   // Function to handle "Go to Home" button click
   const goToHome = () => {
-    navigate.push('/');
+    Route.push('/');
   };
 
   return (

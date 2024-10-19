@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../scss/PaymentCanceledPage.scss';  // Import Sass for styling
 
 const PaymentCanceledPage = () => {
-  const navigate = useHistory();
+  const Route = useNavigate();
 
   // Function to handle "Go to Home" button click
   const goToHome = () => {
-    navigate.push('/');
+    Route.push('/');
   };
 
   return (
