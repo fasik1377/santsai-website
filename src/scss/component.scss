@@ -160,9 +160,33 @@ $white: #ffffff;
 
 .sec_bg {
 	background-image: url("../images/robots.gif");
-	@include background-image;
-	height: 800px;
+	background-size: cover;
+	/* Ensures the background covers the entire section */
+	background-position: center;
+	/* Centers the image */
+	background-repeat: no-repeat;
+	/* Prevents the background from repeating */
+	height: 100vh;
+	/* Full height of the viewport */
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+	.sec_bg {
+		height: 60vh;
+		/* Adjust height for smaller screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.sec_bg {
+		height: 50vh;
+		/* Further adjust height for very small screens */
+	}
 }
 
 
@@ -175,7 +199,7 @@ $white: #ffffff;
 	background: linear-gradient(-45deg, #d3d2d0, #f5f1f1, #c6c9cc, #ffffff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 125vh;
+	height: 75vh;
 }
 .tech_img:hover {
 	transform: scale(1.0);
