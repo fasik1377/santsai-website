@@ -189,20 +189,34 @@ $white: #ffffff;
 	}
 }
 
-
-.tech_img {
-	height: 200px;
-	width: 150px;
-}
-
 .background_gradiant_color {
-	background: linear-gradient(-45deg, #d3d2d0, #f5f1f1, #c6c9cc, #ffffff);
+	// background: linear-gradient(-45deg, #d3d2d0, #f5f1f1, #c6c9cc, #ffffff);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 75vh;
 }
+
+/* Hover effect */
 .tech_img:hover {
-	transform: scale(1.0);
+	transform: scale(1.05);
+	/* Slightly scales up the image */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	/* Adds a shadow effect */
+}
+@keyframes blink {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.blinking-image {
+	animation: blink 2.5s infinite;
 }
 
 @media (width: 476px) {
@@ -1459,8 +1473,77 @@ form {
 	height: 120px;
 	width: 120px;
   }
+@keyframes rotateImage {
+	from {
+		transform: rotate(0deg);
+	}
 
-  .we_appreciate{
+	to {
+		transform: rotate(360deg);
+	}
+}
 
+.rotating-image {
+	animation: rotateImage 12s linear infinite;
+}
+.rotating-image::before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	background: linear-gradient(45deg, #f3ec78, #af4261);
+	z-index: -1;
+	animation: animateBackground 6s infinite linear;
+	border-radius: 8px;
+	/* Matches the shadow's corner rounding */
+}
 
-  }
+/* Background animation */
+@keyframes animateBackground {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.text-highlight {
+	color: #5A5A5A;
+	/* Customize to match your color scheme */
+}
+
+.animated-text {
+	animation: fadeInUp 1s ease-in-out, colorChange 5s infinite;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes colorChange {
+
+	0%,
+	100% {
+		color: #5A5A5A;
+	}
+
+	50% {
+		color: #ff5733;
+		/* Accent color to create a pulse effect */
+	}
+}

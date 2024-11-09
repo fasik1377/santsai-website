@@ -22,7 +22,7 @@ import cplus from "../images/tech/Cplus.png"
 import javascript from "../images/tech/javascript.png"
 import tailwind from "../images/tech/tailwind.png"
 import odoo from "../images/tech/odoo.png"
-import product1 from "../images/software_process.jpg"
+import product1 from "../images/software_process1.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
 import ECommerce from '@material-ui/icons/ShoppingBasket';
@@ -249,7 +249,7 @@ const Home = () => {
     <div className="col-12 background_gradiant_color p-4">
       <div className="row gy-3 gy-md-4 justify-content-center">
         {[
-          { src: flutter, link: "https://flutter.dev/" },
+          { src: flutter, link: "https://flutter.dev/"},
           { src: python, link: "https://www.python.org/" },
           { src: react, link: "https://react.dev/" },
           { src: bootstrap, link: "https://getbootstrap.com/" },
@@ -270,7 +270,7 @@ const Home = () => {
             className="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center"
           >
             <a href={tech.link} target="_blank" rel="noopener noreferrer">
-              <img className="img-fluid tech_img" alt="logo" src={tech.src} />
+              <img className="img-fluid tech_img blinking-image" alt="logo" src={tech.src} style={{width:"120px", height:"100px"}} />
             </a>
           </div>
         ))}
@@ -287,7 +287,7 @@ const Home = () => {
           Our <span className="main_color">Process</span>
         </b>
       </p>
-      <p className="text-muted">
+      <p className="text-muted text-highlight animated-text">
         We take great pride in providing our clients with ideal solutions tailored to their specific issues. 
         To earn our clients' loyalty as business partners, we provide them with personal service.
       </p>
@@ -297,7 +297,7 @@ const Home = () => {
       <div className="col-12 col-md-8 col-lg-6 text-center">
         <div className="snip1534">
           <img
-            className="img-responsive img-fluid"
+            className="img-responsive img-fluid rotating-image"
             alt="product1"
             src={product1}
             style={{ maxWidth: '100%', height: 'auto' }}
