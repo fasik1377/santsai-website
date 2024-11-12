@@ -10,9 +10,13 @@
 	padding: 0;
 	font-family: "Mulish", sans-serif;
 }
-
+body,
 html {
-	scroll-behavior: smooth;
+	margin: 0;
+	/* Removes default margin/padding */
+	padding: 0;
+	overflow-x: hidden;
+	/* Prevents horizontal scroll on the entire page */
 }
 
 /* BUTTON-DEFAULT */
@@ -157,8 +161,7 @@ $white: #ffffff;
 .box_border {
 	border: solid 1px #ececec !important;
 }
-
-.sec_bg {
+ .sec_bg {
 	background-image: url("../images/robots.gif");
 	background-size: cover;
 	/* Ensures the background covers the entire section */
@@ -168,12 +171,14 @@ $white: #ffffff;
 	/* Prevents the background from repeating */
 	height: 100vh;
 	/* Full height of the viewport */
-	width: 100%;
+	width: 100vw;
+	/* Full width of the viewport, preventing horizontal scroll */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
+	/* Prevents content overflow and horizontal scroll */
 }
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
 	.sec_bg {
@@ -1982,5 +1987,40 @@ form {
 	position: absolute;
 	width: 180px;
 }
-.process_class {
+/* Navbar.css */
+.nav-background {
+	background-color: #f8f9fa;
+}
+
+.header_background {
+	background-color: #ffffff;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-nav .nav-item {
+	margin: 0.5rem 0;
+}
+
+.navbar-nav .nav-link {
+	font-size: 1rem;
+	color: #333;
+}
+
+.btn_custom {
+	background-color: #3399cc;
+	color: #fff;
+	padding: 8px 16px;
+}
+
+@media (max-width: 767px) {
+	.navbar-brand img {
+		width: 120px;
+	}
+
+	.navbar-nav .nav-link {
+		font-size: 0.9rem;
+	}
 }
