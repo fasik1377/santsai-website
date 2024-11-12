@@ -278,7 +278,7 @@ const Home = () => {
   </div>
 </div>
 </section>
-<section>
+<section className="process_class">
   <div className="container mx-auto py-5">
     <div className="mb-5 text-center">
       <p className="display-6 mb-1">
