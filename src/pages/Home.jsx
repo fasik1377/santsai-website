@@ -268,8 +268,16 @@ const Home = () => {
             key={index}
             className="col-4 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center"
           >
-            <a href={tech.link} target="_blank" rel="noopener noreferrer">
-              <img className="img-fluid tech_img blinking-image" alt="logo" src={tech.src} style={{width:"120px", height:"100px"}} />
+            <a href={tech.link} target="_blank" rel="noopener noreferrer"><img
+  className="img-fluid tech_img blinking-image"
+  alt="logo"
+  src={tech.src}
+  style={{
+    width: "120px",
+    height: "100px",
+    boxShadow: "30px 40px 80px rgba(133, 3, 3, 0.15)", // Shadow with slight blur
+  }}
+/>
             </a>
           </div>
         ))}
