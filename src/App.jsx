@@ -24,14 +24,19 @@ import LoginPage from "./pages/loginPage.jsx";
 import Dashboard from "./pages/dashboard/dashboard.jsx";
 import EditBlog from "./pages/dashboard/editBlog.jsx";
 import CreateBlog from "./pages/dashboard/createBlog.jsx";
-
+import CaseStudyTable from "./pages/CaseStudy/CaseStudyTable.jsx"
+import EditCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx"
+import CreateCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx"
 const App = () => {
   const location = useLocation();
 
   const isAdminRoute =
     location.pathname.startsWith("/dashboard") ||
     location.pathname === "/login" ||
+    location.pathname === "/caseStudyTable"||
+    location.pathname === "/casestudy/edit/:id"||
     location.pathname === "/blog/edit/:id";
+
 
   const userExists = localStorage.getItem("user");
 
@@ -63,6 +68,11 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blog/edit/:id" element={<EditBlog />} />
           <Route path="/createblog" element={<CreateBlog />} />
+          <Route path="/caseStudyTable" element={<CaseStudyTable />} />
+          <Route path='/casestudy/edit/:id' element={<EditCaseStudyPage/>}/>
+          <Route path='/createCaseStudyPage' element={<CreateCaseStudyPage/>}/>
+
+
           {/* Additional admin routes can be added here */}
         </Route>
       </Routes>
