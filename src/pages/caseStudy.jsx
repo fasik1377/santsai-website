@@ -7,7 +7,7 @@ import axios from 'axios';
 const CaseStudy = () => {
   const [caseStudies, setCaseStudies] = useState([]);
   const [loading, setLoading] = useState(true);
-  const apiUrl = 'http://54.81.228.157:4000/casestudy'; // Replace with your actual API endpoint
+  const apiUrl = 'http://localhost:4000/casestudy'; // Replace with your actual API endpoint
 
   // Fetch case studies from API
   useEffect(() => {

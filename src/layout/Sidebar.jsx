@@ -101,7 +101,7 @@ const Sidebar = () => {
 
           <ListItem
             className={classes.listItem}
-            onClick={() => handleItemClick("Case Studies", "/casestudy")}
+            onClick={() => handleItemClick("Case Studies", "/caseStudyTable")}
             selected={selected === "Case Studies"}
             button
           >
@@ -112,7 +112,7 @@ const Sidebar = () => {
           </ListItem>
           <ListItem
             className={classes.listItem}
-            onClick={() => handleItemClick("Create Casestudy", "/createcasestudy")}
+            onClick={() => handleItemClick("Create Casestudy", "/createCaseStudyPage")}
             selected={selected === "Create Casestudy"}
             button
           >
