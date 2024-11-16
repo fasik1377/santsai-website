@@ -2018,7 +2018,7 @@ form {
 }
 
 .btn_custom {
-	background-color: #3399cc;
+	background-color: #8B0000;
 	color: #fff;
 	padding: 8px 16px;
 }
@@ -2031,4 +2031,46 @@ form {
 	.navbar-nav .nav-link {
 		font-size: 0.9rem;
 	}
+}
+.contact-section {
+	background-color: #f9f9f9;
+}
+
+.contact-info h5,
+.contact-info h6 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.contact-info ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (max-width: 768px) {
+
+	.emailForm,
+	.contact-info {
+		padding: 20px;
+	}
+
+	.contact-info h5 {
+		text-align: center;
+	}
+}
+.send_us{
+	color:#8B0000;
+	font-size: 24px;
+}
+.location{
+	color: #8B0000;
+}
+.head_office{
+	color: #8B0000;
+}
+.legal_support{
+	color: #8B0000;
+}
+.contact_btn{
+	background-color: #8b0000;
 }
