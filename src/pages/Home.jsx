@@ -82,6 +82,7 @@ const Home = () => {
 				<div className="confetti"></div>
 
 			</div>
+			{/* It's removed but why it's not working*/}
 				{/* <div className="sec_bg">
 					<BannerAnim prefixCls="banner-user" autoPlay>
 						<Element
