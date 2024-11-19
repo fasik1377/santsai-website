@@ -82,7 +82,7 @@ const Home = () => {
 				<div className="confetti"></div>
 
 			</div>
-				<div className="sec_bg">
+				{/* <div className="sec_bg">
 					<BannerAnim prefixCls="banner-user" autoPlay>
 						<Element
 							prefixCls="banner-user-elem"
@@ -184,7 +184,7 @@ const Home = () => {
 							</TweenOne>
 						</Element>
 					</BannerAnim>
-				</div>
+				</div>*/}
 			</section>
 
 			<section className="bg-dark">
