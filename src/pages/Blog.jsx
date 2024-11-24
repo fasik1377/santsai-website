@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useCollapse } from 'react-collapsed'
 import Secheader from "./common/Secondaryheader";
@@ -12,6 +12,7 @@ import blog5 from "../images/blogs/blog5.jfif";
 import blog6 from "../images/blogs/blog6.jfif";
 import blog7 from "../images/blogs/blog7.jfif";
 import blog8 from "../images/blogs/blog8.jfif";
+import axios from "axios";
 
 const BlogCard = (props) => {
   return (
@@ -28,7 +29,41 @@ const BlogCard = (props) => {
 };
 
 const Blog = () => {
-  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
+  const [articles, setArticles] = useState([]);
+  const [expandedArticleId, setExpandedArticleId] = useState(null);
+  const [expandedCard, setExpandedCard] = useState(null); // Track expanded article
+
+  const token = localStorage.getItem('token');
+
+  // Fetch blogs from backend
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/blog/blogs', {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
+        console.log(response)
+        setArticles(response.data.data); 
+      } catch (error) {
+        console.error("Error fetching blogs:", error);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+
+  const toggleExpand = (id) => {
+    setExpandedCard((prev) => (prev === id ? null : id)); // Toggle expand state for the selected blog
+  };
+
+  const truncateText = (text, limit) => {
+    const words = text.split(' ');
+    return words.length > limit ? words.slice(0, limit).join(' ') + '...' : text;
+  };
+
   return (
     <>
       <Secheader
@@ -43,152 +78,66 @@ const Blog = () => {
 
             <div className="col-lg-8 entries">
 
-              <article className="entry">
-
-                <div className="entry-img">
-                  <img src={blog1} alt="image" className="img-fluid" />
-                </div>
-
-                <h2 className="entry-title">
-                  <a className="anchor_style" href="blog-single.html">Why Your Business Needs a Digital Transformation Strategy</a>
-                </h2>
-
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a className="anchor_style" href="blog-single.html">Ratan Pratap</a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a className="anchor_style" href="blog-single.html"><time datetime="2020-01-01">Aug 21, 2024</time></a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a className="anchor_style" href="blog-single.html">12 Comments</a></li>
-                  </ul>
-                </div>
-
-                <div className="entry-content">
-                  <p>In today’s fast-moving world, a digital transformation strategy is essential for business success. Embracing digital tools enhances efficiency, improves customer experiences, and boosts competitiveness.
-                  </p>
-                  {isExpanded ? '' : (
-                    <div className="read-more">
-                      <a className="anchor_style" {...getToggleProps()}>Read More</a>
-                    </div>)}
-
-                  <section {...getCollapseProps()}>It enables data-driven decisions, fosters innovation, and helps you adapt quickly to market changes.
-                    Without it, your business risks lagging behind as others leverage technology to advance. A solid digital strategy aligns tech with business goals, ensuring optimal resource use and maximizing ROI. By transforming digitally, you position your business for sustained growth and relevance, meeting modern demands and staying ahead of the curve.
-                  </section>
-                  {!isExpanded ? '' : (
-                    <div className="read-more">
-                      <a className="anchor_style" {...getToggleProps()}>Show Less</a>
-                    </div>)}
-
-                </div>
-
-              </article>
-
-              <article className="entry">
-
-                <div className="entry-img">
-                  <img src={blog2} alt="" className="img-fluid" />
-                </div>
-
-                <h2 className="entry-title">
-                  <a className="anchor_style" href="blog-single.html">The Role of Augmented Reality in Future Software Applications</a>
-                </h2>
-
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a className="anchor_style" href="blog-single.html">Ratan Pratap</a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a className="anchor_style" href="blog-single.html"><time datetime="2020-01-01">Aug 14, 2024</time></a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a className="anchor_style" href="blog-single.html">24 Comments</a></li>
-                  </ul>
-                </div>
-
-                <div className="entry-content">
-                  <p>Augmented Reality (AR) is set to revolutionize future software applications. By blending digital information with the physical world, AR enhances user experiences across various fields.
-                  </p>
-                  
-                  {isExpanded ? '' : (
-                    <div className="read-more">
-                      <a className="anchor_style" {...getToggleProps()}>Read More</a>
-                    </div>)}
-                    
-                  <section {...getCollapseProps()}>In gaming, it creates immersive worlds; in education, it provides interactive learning tools; and in retail, it allows virtual try-ons. Healthcare professionals can visualize complex data in real-time, and architects can walk through 3D models of their designs.
-                  As AR technology advances, its integration into everyday apps will make interactions more intuitive and engaging, transforming how we work, learn, and play.
-                  </section>
-
-                  
-                  {!isExpanded ? '' : (
-                    <div className="read-more">
-                      <a className="anchor_style" {...getToggleProps()}>Show Less</a>
-                    </div>)}
-                </div>
-
-              </article>
-
-              <article className="entry">
-
-                <div className="entry-img">
-                  <img src={blog3} alt="" className="img-fluid" />
-                </div>
-
-                <h2 className="entry-title">
-                  <a className="anchor_style" href="blog-single.html">Biotechnology is the savior of wildlife</a>
-                </h2>
-
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a className="anchor_style" href="blog-single.html">Ratan Pratap</a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a className="anchor_style" href="blog-single.html"><time datetime="2020-01-01">Aug 12, 2024</time></a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a className="anchor_style" href="blog-single.html">57 Comments</a></li>
-                  </ul>
-                </div>
-
-                <div className="entry-content">
-                  <p>Biotechnology is truly a savior for wildlife! Through genetic research, scientists can protect endangered species by boosting their genetic diversity and health. Advanced techniques like cloning and gene editing help restore populations and even revive extinct species.
-                    Biotechnology also aids in habitat conservation by creating sustainable solutions to combat environmental threats. With these innovative tools, we’re enhancing our efforts to preserve biodiversity and ensure a thriving planet for future generations. By harnessing the power of biotech,
-                    we're making significant strides towards protecting wildlife and maintaining ecological balance.
-                  </p>
-                  <div className="read-more">
-                    <a className="anchor_style" href="blog-single.html">Read More</a>
+            {articles?.map((article) => (
+                <article key={article.id} className="entry">
+                  <div className="entry-img">
+                    <img src={article.image} alt="blog" className="img-fluid" />
                   </div>
-                </div>
 
-              </article>
+                  <h2 className="entry-title">
+                    <a className="anchor_style" href="blog-single.html">
+                      {article.title}
+                    </a>
+                  </h2>
 
-              <article className="entry">
-
-                <div className="entry-img">
-                  <img src={blog4} alt="" className="img-fluid" />
-                </div>
-
-                <h2 className="entry-title">
-                  <a className="anchor_style" href="blog-single.html">Open Source Tools for Software Developers</a>
-                </h2>
-
-                <div className="entry-meta">
-                  <ul>
-                    <li className="d-flex align-items-center"><i className="bi bi-person"></i> <a className="anchor_style" href="blog-single.html">Ratan Pratap</a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-clock"></i> <a className="anchor_style" href="blog-single.html"><time datetime="2020-01-01">Aug 10, 2024</time></a></li>
-                    <li className="d-flex align-items-center"><i className="bi bi-chat-dots"></i> <a className="anchor_style" href="blog-single.html">102 Comments</a></li>
-                  </ul>
-                </div>
-
-                <div className="entry-content">
-                  <p>Software developers have a wealth of open-source tools to enhance their workflow! **Visual Studio Code** remains a top choice for code editing with its rich extensions.
-                    **Git** and **GitHub** are essential for version control and collaboration. **Docker** simplifies containerization, while **Kubernetes** manages container orchestration. **Jenkins** automates builds and deployments, and **Postman** is great for API testing.
-                    For monitoring and logging, **Prometheus** and **Grafana** are invaluable. These tools empower developers to build, test, and deploy software efficiently, making them indispensable in today’s tech landscape.
-                  </p>
-                  <div className="read-more">
-                    <a className="anchor_style" href="blog-single.html">Read More</a>
+                  <div className="entry-meta">
+                    <ul>
+                      <li className="d-flex align-items-center">
+                        <i className="bi bi-person"></i>
+                        <a className="anchor_style" href="blog-single.html">
+                          Ratan Pratap
+                        </a>
+                      </li>
+                      <li className="d-flex align-items-center">
+                        <i className="bi bi-clock"></i>
+                        <a className="anchor_style" href="blog-single.html">
+                          <time dateTime="2020-01-01">{article?.date}</time>
+                        </a>
+                      </li>
+                      <li className="d-flex align-items-center">
+                        <i className="bi bi-chat-dots"></i>
+                        <a className="anchor_style" href="blog-single.html">
+                          12
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </div>
+                  <div className="entry-content">
+                    <p>
+                      {expandedCard === article._id
+                        ? article.content
+                        : truncateText(article.content, 15)}
+                    </p>
 
-              </article>
+                    <div className="read-more">
+                      <button
+                        className="anchor_style"
+                        onClick={() => toggleExpand(article._id)}
+                      >
+                        {expandedCard === article._id ? "Show Less" : "Read More"}
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              ))}
 
-              <div className="blog-pagination">
+              {/* <div className="blog-pagination">
                 <ul className="justify-content-center">
                   <li><a className="anchor_style" href="#">1</a></li>
                   <li className="active"><a className="anchor_style" href="#">2</a></li>
                   <li><a className="anchor_style" href="#">3</a></li>
                 </ul>
-              </div>
-
+              </div> */}
             </div>
 
             <div className="col-lg-4">

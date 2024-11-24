@@ -164,7 +164,7 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/signin"><p className="text-black">
+                  <NavLink exact className="nav-link" to="/login"><p className="text-black">
                     <span className="d-lg-none d-xl-none mr-3"><AdminIcon /></span>
                     Admin</p>
                   </NavLink>
