@@ -93,12 +93,34 @@ const Navbar = () => {
     <>
       <div className="container-fluid navigation_bar nav_background">
         <nav className="navscroll navbar fixed-top navbar-expand-lg navbar-light py-2 px-3 header_background">
-          <div className="container ">
-            <NavLink className="navbar-brand" to="/">
-              <img src={logo} alt="logo1" className="img-fluid" width="160" />
-            </NavLink>
+          <div className="container "><NavLink 
+  className="navbar-brand" 
+  to="/" 
+  style={{ 
+    backgroundColor: '#fff0f0', 
+    borderRadius: '100px', 
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
+    animation: 'blink 1.5s infinite' 
+  }}
+>
+  <img src={logo} alt="logo1" className="img-fluid" width="160" />
+</NavLink>
+
+<style>
+{`
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+`}
+</style>
+
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="text-black">
+              <span className="text-white">
                 <MenuIcon style={{ fontSize: 35 }} />
               </span>
             </button>
@@ -106,38 +128,39 @@ const Navbar = () => {
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item active navigation_bar">
                   <NavLink exact className="nav-link" to="/">
-                    <p className="text-black"><span className="d-lg-none d-xl-none mr-3 navigation_bar text-black"><HomeIcon /></span>
+                    <p className="text-white"><span className="d-lg-none d-xl-none mr-3 navigation_bar text-white"><HomeIcon /></span>
                     Home<span className="sr-only"></span></p>
                   </NavLink>
                 </li>
                 <li className="nav-item navigation_bar">
                   <NavLink exact className="nav-link" to="/service">
-                  <p className="text-black"> <span className="d-lg-none d-xl-none mr-3"><DvrIcon /></span>
+                  <p className="text-white"> <span className="d-lg-none d-xl-none mr-3"><DvrIcon /></span>
 				  Services</p> 
                   </NavLink>
                 </li>
                 
                 <li className="nav-item">
                   <NavLink exact className="nav-link" to="/career">
-                    <p className="text-black"><span className="d-lg-none d-xl-none mr-3"><WorkIcon /></span>
+                    <p className="text-white"><span className="d-lg-none d-xl-none mr-3"><WorkIcon /></span>
                     Career</p>
                   </NavLink>
                   </li>
                   <li className="nav-item dropdown">
   {/* About Link */}
-  <NavLink
-    className="nav-link dropdown-toggle"
-    to="#"
-    id="navbarDropdown"
-    role="button"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-  >
-    About
-  </NavLink>
+<NavLink
+  className="nav-link dropdown-toggle text-white"
+  to="#"
+  id="navbarDropdown"
+  role="button"
+  data-bs-toggle="dropdown"
+  aria-expanded="false"
+  style={{ color: "white" }}
+>
+  About
+</NavLink>
 
   {/* Bootstrap Dropdown Menu */}
-  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+  <ul className="dropdown-menu text-white" aria-labelledby="navbarDropdown">
     <li>
       <NavLink className="dropdown-item" to="/about">
         About Us
@@ -152,19 +175,19 @@ const Navbar = () => {
 </li>
 
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/contact"><p className="text-black">
+                  <NavLink exact className="nav-link" to="/contact"><p className="text-white">
                     <span className="d-lg-none d-xl-none mr-3"><HeadsetIcon /></span>
                     Contact</p>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/blog"><p className="text-black">
+                  <NavLink exact className="nav-link" to="/blog"><p className="text-white">
                     <span className="d-lg-none d-xl-none mr-3"><BlogIcon /></span>
                     Blog</p>
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/signin"><p className="text-black">
+                  <NavLink exact className="nav-link" to="/signin"><p className="text-white">
                     <span className="d-lg-none d-xl-none mr-3"><AdminIcon /></span>
                     Admin</p>
                   </NavLink>
