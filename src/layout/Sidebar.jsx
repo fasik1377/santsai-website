@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: "#fff", 
-    color: "#2c3e50", 
+    backgroundColor: "#fff",
+    color: "#2c3e50",
   },
   logo: {
     width: "80%",
@@ -34,17 +34,32 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     "&:hover": {
-      color:'white',
-      backgroundColor: "#da971b", 
+      backgroundColor: "#000", // Black background on hover
+      "& $listItemText": {
+        color: "white", // White text on hover
+      },
+      "& $icon": {
+        color: "white", // White icon on hover
+      },
+    },
+    "&.Mui-selected": {
+      backgroundColor: "green", // Green background for active route
+      color: "white", // White text for active route
+      "& $listItemText": {
+        color: "white", // White text for active route
+      },
+      "& $icon": {
+        color: "white", // White icon for active route
+      },
     },
   },
   listItemText: {
     fontSize: "1.2rem",
-    color: "#2c3e50", 
+    color: "#2c3e50", // Default text color
   },
   icon: {
     fontSize: "3.5rem",
-    color: "#d7a022", 
+    color: "#d7a022", // Default icon color
   },
 }));
 

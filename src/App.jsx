@@ -1,6 +1,8 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
+
 import Home from "./pages/Home";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
@@ -15,35 +17,41 @@ import Signin from "./pages/Signin";
 import AdminMain from "./pages/AdminMain";
 import OnlyAdminPrivateRoute from "./pages/AdminRoute/adminRoute.jsx";
 import Blog from "./pages/Blog";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Return from "./pages/Return.jsx";
 import CaseStudy from "./pages/caseStudy.jsx";
-import PaymentCanceledPage from './pages/PaymentCanceledPage.js';
-import PaymentCompletePage from './pages/PaymentCompletePage.js';
+import PaymentCanceledPage from "./pages/PaymentCanceledPage.js";
+import PaymentCompletePage from "./pages/PaymentCompletePage.js";
 import LoginPage from "./pages/loginPage.jsx";
 import Dashboard from "./pages/dashboard/dashboard.jsx";
 import EditBlog from "./pages/dashboard/editBlog.jsx";
 import CreateBlog from "./pages/dashboard/createBlog.jsx";
-import CaseStudyTable from "./pages/CaseStudy/CaseStudyTable.jsx"
-import EditCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx"
-import CreateCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx"
+import CaseStudyTable from "./pages/CaseStudy/CaseStudyTable.jsx";
+import EditCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx";
+import CreateCaseStudyPage from "./pages/CaseStudy/CreateCaseStudyPage.jsx";
+
 const App = () => {
   const location = useLocation();
-
+  
   const isAdminRoute =
     location.pathname.startsWith("/dashboard") ||
     location.pathname === "/login" ||
-    location.pathname === "/caseStudyTable"||
-    location.pathname === "/casestudy/edit/:id"||
+    location.pathname === "/createblog" ||
+    location.pathname === "/caseStudyTable" ||
+    location.pathname === "/createCaseStudyPage" ||
+    location.pathname === "/casestudy/edit/:id" ||
     location.pathname === "/blog/edit/:id";
-
 
   const userExists = localStorage.getItem("user");
 
+  // Redirect to home if on an admin route and user does not exist
+  if (isAdminRoute && !userExists) {
+    return <Navigate to="/" replace />;
+  }
+
   return (
     <>
-      {/* Render Navbar and Footer only if the user does not exist in localStorage and is not on an admin route */}
-      {!isAdminRoute && !userExists && <Navbar />}
+      {/* Render Navbar and Footer only if not on admin routes */}
+      {!isAdminRoute && <Navbar />}
 
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -69,16 +77,15 @@ const App = () => {
           <Route path="/blog/edit/:id" element={<EditBlog />} />
           <Route path="/createblog" element={<CreateBlog />} />
           <Route path="/caseStudyTable" element={<CaseStudyTable />} />
-          <Route path='/casestudy/edit/:id' element={<EditCaseStudyPage/>}/>
-          <Route path='/createCaseStudyPage' element={<CreateCaseStudyPage/>}/>
-
+          <Route path="/casestudy/edit/:id" element={<EditCaseStudyPage />} />
+          <Route path="/createCaseStudyPage" element={<CreateCaseStudyPage />} />
 
           {/* Additional admin routes can be added here */}
         </Route>
       </Routes>
 
-      {/* Conditionally render Footer only if not on login or admin routes and if user does not exist in localStorage */}
-      {!isAdminRoute && !userExists && <Footer />}
+      {/* Render Footer only if not on admin routes */}
+      {!isAdminRoute && <Footer />}
     </>
   );
 };

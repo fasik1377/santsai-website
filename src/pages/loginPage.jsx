@@ -59,7 +59,7 @@ const LoginPage = () => {
           flexDirection: "column",
           alignItems: "center",
           width: "100%",
-          maxWidth: "400px",
+          maxWidth: "850px",
         }}
       >
         <Avatar style={{ backgroundColor: "#d7a022", marginBottom: "1rem" }}>
