@@ -120,7 +120,7 @@ const Home = () => {
 	</div>
 	<div class="snowman"></div>
 </div>
-					<BannerAnim prefixCls="banner-user" autoPlay>
+				{/* 	<BannerAnim prefixCls="banner-user" autoPlay>
 						<Element
 							prefixCls="banner-user-elem"
 							key="0"
@@ -220,7 +220,7 @@ const Home = () => {
 								<br />
 							</TweenOne>
 						</Element>
-					</BannerAnim>
+					</BannerAnim>*/}
 				</div>
 			</section>
 
