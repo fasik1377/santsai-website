@@ -97,7 +97,7 @@ const Navbar = () => {
   className="navbar-brand" 
   to="/" 
 style={{
-  backgroundColor: 'linear-gradient(135deg, #ffcccc, #ffe6e6)',
+  backgroundColor: 'white',
   borderRadius: '50%',
   boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 10px 2px rgba(255, 255, 255, 0.8)',
   animation: 'pulse 2s infinite ease-in-out',
