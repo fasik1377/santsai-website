@@ -2346,7 +2346,53 @@ body.night .land {
 	justify-content: center;
 }
 
-
-
-
-
+//SDLC Card
+	
+	    .sdlc-section {
+	    	padding: 50px 20px;
+	    	text-align: center;
+	    }
+	
+	    .sdlc-title {
+	    	color: #8B0000;
+	    	margin-bottom: 30px;
+			font-size: 30px;
+	    }
+	
+	    .sdlc-card {
+	    	border: 2px solid #8B0000;
+	    	border-radius: 10px;
+	    	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	    	background-color: #fff;
+	    }
+	
+	    .sdlc-card:hover {
+	    	transform: translateY(-10px);
+	    	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+	    }
+	
+	    .sdlc-card-header {
+	    	background-color: #8B0000;
+	    	color: #fff;
+	    	font-size: 18px;
+	    	padding: 10px;
+	    	border-top-left-radius: 10px;
+	    	border-top-right-radius: 10px;
+	    }
+	
+	    .sdlc-card-body {
+	    	padding: 20px;
+	    }
+	
+	    .sdlc-step {
+	    	font-size: 22px;
+	    	color: #8B0000;
+	    	margin-bottom: 10px;
+	    }
+	
+	    .sdlc-description {
+	    	color: #333;
+	    	font-size: 16px;
+	    }
+	
+	

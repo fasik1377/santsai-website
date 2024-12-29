@@ -323,8 +323,79 @@ const Home = () => {
   </div>
 </div>
 </section>
-<section>
-  <div className="container mx-auto py-5">
+<section class="sdlc-section">
+    <h1 class="sdlc-title">System Development Life Cycle (SDLC)</h1>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 1: Planning</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Planning</div>
+              <p class="sdlc-description">Define the project scope, objectives, and feasibility.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 2: Analysis</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Analysis</div>
+              <p class="sdlc-description">Analyze requirements and system specifications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 3: Design</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Design</div>
+              <p class="sdlc-description">Create system designs, wireframes, and architecture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 4: Development</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Development</div>
+              <p class="sdlc-description">Write code and build the system functionalities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 5: Testing</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Testing</div>
+              <p class="sdlc-description">Test the system for bugs and performance issues.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 6: Deployment</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Deployment</div>
+              <p class="sdlc-description">Deploy the system to the production environment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mx-auto">
+          <div class="sdlc-card">
+            <div class="sdlc-card-header">Step 7: Maintenance</div>
+            <div class="sdlc-card-body">
+              <div class="sdlc-step">Maintenance</div>
+              <p class="sdlc-description">Monitor, update, and maintain the system.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ {/* 
+ <section>
+ <div className="container mx-auto py-5">
     <div className="mb-5 text-center">
       <p className="display-6 mb-1">
         <b>
@@ -351,6 +422,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+ */} 
 {/* 
 			<section className="bg-light">
 				<div className="container mx-auto py-5">
