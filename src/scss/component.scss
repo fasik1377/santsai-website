@@ -170,7 +170,7 @@ $white: #ffffff;
 	/* Optional: add a stronger shadow on hover */
 }
  .sec_bg {
-	background-image: url("../images/robots.gif");
+	//background-image: url("../images/robots.gif");
 	background-size: cover;
 	/* Ensures the background covers the entire section */
 	background-position: center;
@@ -2083,16 +2083,12 @@ form {
 	padding: 0;
 }
 .containerxmass {
-	position: fixed;
-	/* Makes it stick to the viewport */
-	top: 0;
-	left: 0;
-	height: 100vh;
-	/* Ensures it covers the full viewport height */
-	width: 100vw;
-	/* Ensures it covers the full viewport width */
+	position: absolute;
+	height: 100%;
 	overflow: hidden;
 	background: linear-gradient(#bd7373, #8b0000, #fff);
+	left: 0;
+	right: 0;
 	z-index: 0;
 	transition: filter 1s;
 }

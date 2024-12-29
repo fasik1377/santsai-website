@@ -99,15 +99,16 @@ const Navbar = () => {
 style={{
   backgroundColor: 'linear-gradient(135deg, #ffcccc, #ffe6e6)',
   borderRadius: '50%',
-  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1)',
+  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 10px 2px rgba(255, 255, 255, 0.8)',
   animation: 'pulse 2s infinite ease-in-out',
   border: '2px solid #ff9999',
   width: '100px', // Ensure the element is perfectly circular
   height: '100px', // Ensure the element is perfectly circular
   display: 'flex', // Center content inside the circle (if needed)
-  justifyContent: 'center', 
+  justifyContent: 'center',
   alignItems: 'center',
 }}
+
 
 
 >
@@ -168,7 +169,7 @@ style={{
   role="button"
   data-bs-toggle="dropdown"
   aria-expanded="false"
-  style={{ color: "white" }}
+  style={{ color: "white"}}
 >
   About
 </NavLink>
@@ -201,7 +202,7 @@ style={{
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" to="/signin"><p className="text-black">
+                  <NavLink exact className="nav-link" to="/signin"><p className="text-white">
                     <span className="d-lg-none d-xl-none mr-3"><AdminIcon /></span>
                     Admin</p>
                   </NavLink>
