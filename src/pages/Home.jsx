@@ -324,7 +324,10 @@ const Home = () => {
 </div>
 </section>
 <section class="sdlc-section">
-    <h1 class="sdlc-title">System Development Life Cycle (SDLC)</h1>
+    <h1 class="sdlc-title">
+        <b>
+          System Development <span style={{color:'black'}}>Life Cycle (SDLC)</span>
+        </b></h1>
     <div class="container">
       <div class="row g-4">
         <div class="col-md-4">
