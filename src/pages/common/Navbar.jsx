@@ -96,24 +96,38 @@ const Navbar = () => {
           <div className="container "><NavLink 
   className="navbar-brand" 
   to="/" 
-  style={{ 
-    backgroundColor: '#fff0f0', 
-    borderRadius: '100px', 
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
-    animation: 'blink 1.5s infinite' 
-  }}
+style={{
+  backgroundColor: 'linear-gradient(135deg, #ffcccc, #ffe6e6)',
+  borderRadius: '50%',
+  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1)',
+  animation: 'pulse 2s infinite ease-in-out',
+  border: '2px solid #ff9999',
+  width: '100px', // Ensure the element is perfectly circular
+  height: '100px', // Ensure the element is perfectly circular
+  display: 'flex', // Center content inside the circle (if needed)
+  justifyContent: 'center', 
+  alignItems: 'center',
+}}
+
+
 >
   <img src={logo} alt="logo1" className="img-fluid" width="160" />
 </NavLink>
 
 <style>
 {`
-  @keyframes blink {
-    0%, 100% {
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
       opacity: 1;
     }
     50% {
-      opacity: 0.5;
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
   }
 `}

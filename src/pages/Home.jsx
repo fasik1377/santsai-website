@@ -389,7 +389,7 @@ const Home = () => {
 			</section>*/}
 
 	<section class="backgroundanimation" >
-    <div id="background-wrap">
+   {/* <div id="background-wrap">
         <div className="bubble x1"></div>
         <div className="bubble x2"></div>
         <div className="bubble x3"></div>
@@ -400,7 +400,7 @@ const Home = () => {
         <div className="bubble x8"></div>
         <div className="bubble x9"></div>
         <div className="bubble x10"></div>
-    </div>
+    </div>*/} 
 	<div class="hover">
 	{
 		/* I add the comment here. To show something is new*/     

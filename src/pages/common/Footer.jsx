@@ -71,7 +71,7 @@ const Footer = () => {
 					<div className="text-white">
 						<span className="mx-2"><EmailIcon fontSize="medium" /></span>
 					</div>
-					<div className="text-white medium">info@santcorporation.com</div>
+					<div className="text-white medium">ratannarayan@santcorporation.com</div>
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
 					<div className="text-white small">

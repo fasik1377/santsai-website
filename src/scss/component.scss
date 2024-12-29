@@ -2083,11 +2083,16 @@ form {
 	padding: 0;
 }
 .containerxmass {
-	position: absolute;
-	height: 100%;
+	position: fixed;
+	/* Makes it stick to the viewport */
+	top: 0;
+	left: 0;
+	height: 100vh;
+	/* Ensures it covers the full viewport height */
+	width: 100vw;
+	/* Ensures it covers the full viewport width */
 	overflow: hidden;
 	background: linear-gradient(#bd7373, #8b0000, #fff);
-	width: 100%;
 	z-index: 0;
 	transition: filter 1s;
 }
