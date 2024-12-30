@@ -106,7 +106,7 @@ const Contact = () => {
                 <h5 className="mb-3 head_office">Head Office</h5>
                 <p>
                   <CallOutlinedIcon /> +91-8805587310 / 0657-3568866 <br />
-                  <EmailOutlinedIcon /> info@santcorporation.com
+                  <EmailOutlinedIcon /> ratannarayan@santcorporation.com
                 </p>
                 <br></br>
                 <h6 className="location">Location:</h6>

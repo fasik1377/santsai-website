@@ -265,7 +265,7 @@ $white: #ffffff;
 }
 
 .sec_hdr {
-	background-image: url("../images/cp2.jpg");
+	background-image: url("../images/cp1.jpg");
 	@include background-image;
 }
 
@@ -470,6 +470,37 @@ form {
 	margin-top: 10%;
 	border-radius: 22px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.under_development {
+	display: inline-block;
+	background: #FFFFFF;
+	width: 434px;
+	height: 200px;
+	margin-top: 25%;
+	border-radius: 22px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 768px) {
+	.under_development {
+		width: 90%;
+		/* Adjust width for medium-sized screens */
+		height: auto;
+		/* Allow height to adjust automatically */
+		margin-top: 15%;
+		/* Adjust margin for better appearance */
+	}
+}
+
+@media (max-width: 480px) {
+	.under_development {
+		width: 95%;
+		/* Use almost full width for smaller screens */
+		height: auto;
+		/* Maintain auto height */
+		margin-top: 10%;
+		/* Adjust top margin for smaller devices */
+	}
 }
 
 .sign_link {

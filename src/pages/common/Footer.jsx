@@ -44,8 +44,8 @@ const Footer = () => {
   </div>
 </div> 
 				*/}
-				<div className="showmelocal">
-				<a href="https://www.showmelocal.com/profile.aspx?bid=37667698" target="_blank"><img src="https://www.showmelocal.com/showmelocal-member-37667698" alt="Santsai Corporation Pvt. Ltd..,Software Company,Jamshedpur,Jharkhand" /></a>
+				{/* */}<div className="showmelocal">
+				
 				</div>
 				<div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
 <motion.div
