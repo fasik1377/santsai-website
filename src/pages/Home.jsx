@@ -25,7 +25,7 @@ import odoo from "../images/tech/odoo.png"
 import product1 from "../images/software_process1.png"
 import rocket from "../images/rocket.png"
 import portfolio1 from "../images/portfolio/bloom_1.jpg"
-import christmas_tree from "../images/christmas-tree.png"
+//import christmas_tree from "../images/christmas-tree.png"
 import christmas_bell from "../images/christmas-bell.png"
 import exam1 from "../images/exam1.jpg"
 import digital_graphics from "../images/portfolio/Santsai_graphics.png"
@@ -262,12 +262,12 @@ const Home = () => {
 
   {/* Christmas Decorations */}
   <div className="graphics">
-    <img 
+   {/* <img 
       src={christmas_tree} 
       alt="Christmas Tree" 
       className="position-absolute" 
       style={{ bottom: "10px", left: "20px", width: "120px" }}
-    />
+    />*/} 
     <img 
       src={christmas_bell}
       alt="Christmas Bell" 
@@ -394,15 +394,18 @@ const Home = () => {
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src={portfolio1} class="img-fluid" alt="" /></a>
-                <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Bloom App</a></h4>
-                  <p>Beauty salon and spa booking app</p>
-                </div>
-              </div>
-            </div>
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app text-center text-md-start">
+  <div class="portfolio-content h-100">
+    <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox">
+      <img src={portfolio1} class="img-fluid mx-auto d-block" alt="" />
+    </a>
+    <div class="portfolio-info">
+      <h4><a href="portfolio-details.html" title="More Details">Bloom App</a></h4>
+      <p>Beauty salon and spa booking app</p>
+    </div>
+  </div>
+</div>
+
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">

@@ -2583,7 +2583,7 @@ body.night .land {
 	/* Adds spacing between the title and paragraph */
 }
   .blinking-text {
-  	font-size: 3.5rem;
+  	font-size: 2.5rem;
   	animation: blinker 1.5s linear infinite;
   }
 
@@ -2622,4 +2622,9 @@ body.night .land {
 @keyframes twinkle {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(0.9); }
+}
+@media (max-width: 768px) {
+	.portfolio-content {
+		text-align: center;
+	}
 }
