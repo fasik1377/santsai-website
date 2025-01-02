@@ -16,7 +16,7 @@ const Footer = () => {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             <motion.div
-              style={{ fontSize: "20px", color: "#fff" }}
+              style={{ fontSize: "16px", color: "#FFD700" }}
               animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -86,7 +86,7 @@ const Footer = () => {
 
         <div className="container d-lg-flex align-items-center justify-content-center py-3 medium text-center ms-auto">
           <div className="text-white small">
-            Copyright &copy; 2024 {" "}
+            Copyright &copy; 2025 {" "}
             <a
               className="anchor"
               href="https://fasik1377.github.io/fasika-abera/"
