@@ -2426,4 +2426,200 @@ body.night .land {
 	    	font-size: 16px;
 	    }
 	
-	
+
+.launch-container {
+	position: relative;
+	width: 100px;
+	height: 200px;
+}
+
+.rocket {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	animation: launch 5s ease-in infinite;
+}
+
+.smoke2 {
+	position: absolute;
+	bottom: -30px;
+	width: 20px;
+	height: 20px;
+	background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+	border-radius: 50%;
+	animation: smoke2 2s ease-out infinite;
+	opacity: 0.6;
+}
+
+@keyframes launch {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-100vh);
+	}
+}
+
+@keyframes smoke2 {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(5);
+		opacity: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+# Portfolio Section
+--------------------------------------------------------------*/
+.portfolio .portfolio-filters {
+	padding: 0 0 20px 0;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 10px;
+	line-height: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+	color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+	margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 575px) {
+	.portfolio .portfolio-filters li {
+		font-size: 14px;
+		margin: 0 5px;
+	}
+}
+
+.portfolio .portfolio-content {
+	background-color: var(--surface-color);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	height: 100px;
+	width: 250px;
+	overflow: hidden;
+}
+
+.portfolio .portfolio-content img {
+	transition: 0.3s;
+	position: relative;
+	z-index: 1;
+	height: 400px;
+	width: 250px;
+}
+
+.portfolio .portfolio-content .portfolio-info {
+	background-color: var(--background-color);
+	border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+	padding: 25px 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.portfolio .portfolio-content .portfolio-info h4 {
+	font-size: 18px;
+	font-weight: 600;
+	padding-right: 50px;
+}
+
+.portfolio .portfolio-content .portfolio-info h4 a {
+	color: var(--heading-color);
+	transition: 0.3s;
+}
+
+.portfolio .portfolio-content .portfolio-info h4 a:hover {
+	color: var(--accent-color);
+}
+
+.portfolio .portfolio-content .portfolio-info p {
+	color: color-mix(in srgb, var(--default-color), transparent 30%);
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-right: 50px;
+}
+
+.portfolio .portfolio-content:hover img {
+	transform: scale(1.1);
+}
+.section-title {
+	text-align: center;
+	/* Aligns text to the center */
+}
+
+.section-title h2 {
+	font-weight: bold;
+	/* Makes the title bold */
+	font-size: 2.5rem;
+	/* Increases the size of the title */
+}
+
+.section-title p {
+	font-size: 1rem;
+	/* Optional: Adjust the paragraph text size */
+	margin-top: 0.5rem;
+	/* Adds spacing between the title and paragraph */
+}
+  .blinking-text {
+  	font-size: 3.5rem;
+  	animation: blinker 1.5s linear infinite;
+  }
+
+  @keyframes blinker {
+  	50% {
+  		opacity: 0;
+  	}
+  }
+
+  
+
+
+
+  .christmas-lights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.light {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+.color-1 { background-color: #FF0000; }
+.color-2 { background-color: #00FF00; }
+.color-3 { background-color: #0000FF; }
+.color-4 { background-color: #FFFF00; }
+.color-5 { background-color: #FF00FF; }
+.color-6 { background-color: #00FFFF; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.9); }
+}

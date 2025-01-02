@@ -23,6 +23,12 @@ import javascript from "../images/tech/javascript.png"
 import tailwind from "../images/tech/tailwind.png"
 import odoo from "../images/tech/odoo.png"
 import product1 from "../images/software_process1.png"
+import rocket from "../images/rocket.png"
+import portfolio1 from "../images/portfolio/bloom_1.jpg"
+import christmas_tree from "../images/christmas-tree.png"
+import christmas_bell from "../images/christmas-bell.png"
+import exam1 from "../images/exam1.jpg"
+import digital_graphics from "../images/portfolio/Santsai_graphics.png"
 import BusinessIcon from '@material-ui/icons/Smartphone';
 import WebIcon from '@material-ui/icons/DesktopWindows';
 import ECommerce from '@material-ui/icons/ShoppingBasket';
@@ -223,23 +229,54 @@ const Home = () => {
 					</BannerAnim>*/}
 				</div>
 			</section>
-<section className="bg-dark text-center">
-  <div className="container py-5 col-lg-10 col-xl-9">
-    <p className="display-6 text-white mb-4">
-      <strong>The Company for Web Solutions</strong>
-    </p>
-    <p className="text-white fs-6">
-      Our company is one of the top ones in India. <em>"Our ultimate objective is to provide the best services and improve overall growth of client's business."</em>
-      <br />
-      Santsai Corporation Pvt. Ltd. is an Indian web design and development company that operates around the clock and provides exceptional solutions for your technical needs and goals. In the areas of eCommerce website development, WordPress, Magento, Joomla development, custom web application development, content management system, search engine optimisation, internet marketing, mobile responsive website, and mobile application development, we have great expertise providing specialised and measurable services. We have established our reputation by providing numerous businesses with worthwhile and high-quality solutions that set them apart from the competition.
-    </p>
-    <p className="text-white fs-6 mt-4">
-      <strong>12+ Years of Experience in the Industry</strong>
-      <br />
-      More than 100 completed projects in over ten nations. Knowledge of website design, usability, and app development. We recognise your discomforts, ensure timely delivery and quality assurance. With a helpful and amiable support staff, we are subject matter experts while maintaining affordability.
-    </p>
+<section 
+  className="text-center position-relative" 
+  style={{
+    backgroundColor: "#8B0000", 
+    color: "white", 
+    overflow: "hidden",
+  }}
+>
+  {/* Falling Snow Animation */}
+  <div className="snow"></div>
+<div className="container py-5 col-lg-10 col-xl-9">
+  <div className="blinking-text text-warning text-center mb-4">
+    <strong>The website is under construction</strong>
+  </div>
+  <p className="display-6 text-white mb-4">
+    <strong>The Company for Web Solutions</strong>
+  </p>
+  <p className="text-white fs-6">
+    Our company is one of the top ones in India. <em>"Our ultimate objective is to provide the best services and improve overall growth of client's business."</em>
+    <br />
+    Santsai Corporation Pvt. Ltd. is an Indian web design and development company that operates around the clock and provides exceptional solutions for your technical needs and goals. In the areas of eCommerce website development, WordPress, Magento, Joomla development, custom web application development, content management system, search engine optimisation, internet marketing, mobile responsive website, and mobile application development, we have great expertise providing specialised and measurable services. We have established our reputation by providing numerous businesses with worthwhile and high-quality solutions that set them apart from the competition.
+  </p>
+  <p className="text-white fs-6 mt-4">
+    <strong>12+ Years of Experience in the Industry</strong>
+    <br />
+    More than 100 completed projects in over ten nations. Knowledge of website design, usability, and app development. We recognise your discomforts, ensure timely delivery and quality assurance. With a helpful and amiable support staff, we are subject matter experts while maintaining affordability.
+  </p>
+</div>
+
+
+
+  {/* Christmas Decorations */}
+  <div className="graphics">
+    <img 
+      src={christmas_tree} 
+      alt="Christmas Tree" 
+      className="position-absolute" 
+      style={{ bottom: "10px", left: "20px", width: "120px" }}
+    />
+    <img 
+      src={christmas_bell}
+      alt="Christmas Bell" 
+      className="position-absolute" 
+      style={{ top: "10px", right: "20px", width: "100px" }}
+    />
   </div>
 </section>
+
 
 			<section>
 				<div className="container mx-auto py-5">
@@ -332,7 +369,169 @@ const Home = () => {
   </div>
 </div>
 </section>
-<section class="sdlc-section">
+
+  {/*Portfolio Section */}
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>At Santsai Corporation Pvt. Ltd., we specialize in innovative software solutions, blending cutting-edge technology with expert craftsmanship. From dynamic web applications to intelligent mobile apps, our team delivers tailored products that empower businesses to thrive in the digital age. Your success is our innovation.</p>
+      </div>
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        {/* 
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul>
+        */}  
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src={portfolio1} class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Bloom App</a></h4>
+                  <p>Beauty salon and spa booking app</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src={exam1} class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Exam App</a></h4>
+                  <p>Application which assist students by providing exam</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src={digital_graphics} class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Digital Marketing</a></h4>
+                  <p>Provides digital marketing seasoned with graphic design</p>
+                </div>
+              </div>
+            </div>
+			{/*<!-- End Portfolio Item -->*/}
+{/* 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+			*/}
+
+          {/* 
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+          */}  
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+	{/*Portfolio Section*/}
+{/*<section class="sdlc-section">  
+  <div className="launch-container">
+      <img src={rocket} alt="Rocket" className="rocket" />
+      <div className="smoke2"></div>
+    </div>
     <h1 class="sdlc-title">
         <b>
           System Development <span style={{color:'black'}}>Life Cycle (SDLC)</span>
@@ -404,7 +603,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-  </section>
+  </section>*/}
  {/* 
  <section>
  <div className="container mx-auto py-5">
