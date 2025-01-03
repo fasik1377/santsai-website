@@ -40,195 +40,132 @@ const BgElement = Element.BgElement;
 const Home = () => {
 
 	return (
-		<>
-			<section className="sec">
-			<div className="container">
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
+		<><section
+  className="sec"
+  style={{ height: "100vh", overflow: "hidden" }}
+>
+  <div
+    className="animated-background"
+    style={{
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      background: "linear-gradient(135deg, #8B0000, white, black)",
+      animation: "backgroundAnimation 10s infinite alternate",
+      zIndex: -1,
+    }}
+  ></div>
 
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
+  {/* */}<div
+    className="technology-animation"
+    style={{
+      position: "absolute",
+      width: "100%",
+      height: "100%",
+      pointerEvents: "none",
+      overflow: "hidden",
+    }}
+  >
+    {[
+      "odoo.png",
+      "ai.png",
+      "javascript.png",
+      "reactjs.png",
+      "nodejs.png",
+      "python.png",
+      "java.png",
+      "flutter.png",
+      "bootstrap.png",
+      "angular.png",
+    ].map((imgSrc, i) => (
+      <img
+        key={i}
+        src={`/images/tech/${imgSrc}`} // Replace with the correct path to your images
+        alt={imgSrc.replace(".png", "")}
+        className="tech-icon"
+        style={{
+          position: "absolute",
+          width: "70px",
+          height: "70px",
+          animation: `moveTech ${Math.random() * 10 + 5}s linear infinite`,
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+        }}
+      />
+    ))}
+  </div>
 
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
+  <div
+    className="container"
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%",
+      color: "#fff",
+      textAlign: "center",
+    }}
+  >
+   {/* <h1
+      className="animated-text"
+      style={{
+        fontSize: "3rem",
+        fontWeight: "bold",
+        margin: 0,
+        animation: "textAnimation 3s infinite",
+      }}
+    >
+      Santsai Corporation
+    </h1>*/} 
+    {/*    <p
+      style={{
+        fontSize: "1.5rem",
+        margin: "1rem 0",
+        animation: "fadeIn 5s infinite",
+      }}
+    >
+      Your Tech Partner
+    </p> */}
 
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
-				<div className="confetti"></div>
+  </div>
 
-			</div>
-			{/* It's removed but why it's not working*/}
-				<div className="sec_bg">
-				<div class="containerxmass">
-	<div class="toggle-mode">
-		<button>Night</button>
-	</div>
-	<div class="snow"></div>
-	<div class="land"></div>
-	<div class="home">
-		<div class="smoke">
-			<span class="s01"></span>
-			<span class="s02"></span>
-			<span class="s03"></span>
-			<span class="s04"></span>
-			<span class="s05"></span>
-			<span class="s06"></span>
-			<span class="s07"></span>
-			<span class="s08"></span>
-			<span class="s09"></span>
-			<span class="s10"></span>
-		</div>
-	</div>
-	<div class="home_1">
-		<div class="smoke">
-			<span class="s01"></span>
-			<span class="s02"></span>
-			<span class="s03"></span>
-			<span class="s04"></span>
-			<span class="s05"></span>
-			<span class="s06"></span>
-			<span class="s07"></span>
-			<span class="s08"></span>
-			<span class="s09"></span>
-			<span class="s10"></span>
-		</div>
-	</div>
-	<div class="snowman"></div>
-</div>
-				{/* 	<BannerAnim prefixCls="banner-user" autoPlay>
-						<Element
-							prefixCls="banner-user-elem"
-							key="0"
-						>
-							<BgElement
-								key="bg"
-								className="bg_1"
-								style={{
-									background: '#364D79',
-								}}
-							/>
-							<TweenOne className="banner-user-title text-dark" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Develop Mobile Apps for Profitability, </b> <br /> <b> Productivity, and Other Purposes</b>
-							</TweenOne>
-							<TweenOne className="banner-user-text"
-								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-							>
-								<p className="banner_sub_title">We provide end-to-end services for iOS and Android mobile applications.
-									<br />
-									We can assist you in developing software and apps for mobile devices.</p>
-							</TweenOne>
-						</Element>
-						<Element
-							prefixCls="banner-user-elem"
-							key="1"
-						>
-							<div className="bg_imgs">
-								<BgElement
-									key="bg"
-									className="bg"
-									style={{
-										background: '#64CBCC',
-									}}
-								/>
-							</div>
-							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Developing Pixel-Perfect Websites </b> <br /> <b>
-									With a Splash of Originality</b>
-							</TweenOne>
-							<TweenOne className="banner-user-text"
-								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-							>
-								<p className="banner_sub_title">
-									We design stunningly distinctive websites
-									<br />
-									that captivate visitors.</p>
-							</TweenOne>
-						</Element>
-						<Element
-							prefixCls="banner-user-elem"
-							key="2"
-						>
-							<div className="bg_imgs">
+  {/* Add CSS animations */}
+  <style>{`
+    @keyframes backgroundAnimation {
+      0% { background: linear-gradient(135deg, #8B0000, white, black); }
+      50% { background: linear-gradient(135deg, white, black, #8B0000); }
+      100% { background: linear-gradient(135deg, black, #8B0000, white); }
+    }
 
-								<BgElement
-									key="bg"
-									className="bg"
-									style={{
-										background: '#64CBCC',
-									}}
-								/>
-							</div>
-							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Encourage a &nbsp;Genuine Bond.</b>
-							</TweenOne>
-							<TweenOne className="banner-user-text"
-								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-							>
-								<p className="banner_sub_title">
-									Custom-made, expert,
-									<br />  reasonably priced, and efficient web solutions. <br /><br />
-									Given our exceptional professionalism, we are able to provide our esteemed clients in other countries with excellent
-									<br />
-									web and mobile application development services and solutions that guarantee their satisfaction.</p>
-							</TweenOne>
-						</Element>
-						<Element
-							prefixCls="banner-user-elem"
-							key="3"
-						>
-							<div className="bg_imgs">
-								<BgElement
-									key="bg"
-									className="bg"
-									style={{
-										background: '#64CBCC',
-									}}
-								/>
-							</div>
-							<TweenOne className="banner-user-title" animation={{ y: 30, opacity: 0, type: 'from' }}>
-								<b>Incredibly Captivating Digital Marketing </b> <br /> <b> At a Reasonable Price Point.</b>
-							</TweenOne>
-							<TweenOne className="banner-user-text"
-								animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
-							>
-								<p className="banner_sub_title">We create incredible digital marketing strategies to strengthen your brand.</p>
-								<br />
-							</TweenOne>
-						</Element>
-					</BannerAnim>*/}
-				</div>
-			</section>
+    @keyframes textAnimation {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes moveTech {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      100% { transform: translate(100vw, 100vh) rotate(360deg); }
+    }
+
+    .tech-icon {
+      width: 50px;
+      height: 50px;
+      opacity: 0.8;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      animation-timing-function: ease-in-out;
+    }
+  `}</style>
+</section>
+
+
+
 <section 
   className="text-center position-relative" 
   style={{

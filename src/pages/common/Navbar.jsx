@@ -115,7 +115,7 @@ style={{
   <img src={logo} alt="logo1" className="img-fluid" width="160" />
 </NavLink>
 
-<style>
+{/* <style>
 {`
   @keyframes pulse {
     0% {
@@ -132,7 +132,7 @@ style={{
     }
   }
 `}
-</style>
+</style>*/}
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="text-white">
