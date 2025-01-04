@@ -1,13 +1,17 @@
 import React from "react";
 import Secheader from "./common/Secondaryheader";
 
-
 const Tcards = (props) => {
     return (
-
         <figure className="figure col-md-3 text-center">
-            <img src={props.timage} className="figure-img img-fluid rounded col-lg-6 col-7 col-md-10" alt="team3" />
-            <figcaption className="figure-caption text-dark">{props.ttitle}</figcaption>
+            <img
+                src={props.timage}
+                className="figure-img img-fluid rounded col-lg-6 col-7 col-md-10"
+                alt="team3"
+            />
+            <figcaption className="figure-caption text-dark fw-bold mt-3">
+                {props.ttitle}
+            </figcaption>
         </figure>
     );
 };
@@ -15,38 +19,50 @@ const Tcards = (props) => {
 const Return = () => {
     return (
         <>
-
             <Secheader
                 sectitle="Return & Refund Policy"
                 secdesc="The Company for Web Solutions"
             />
 
-            <section>
+            <section className="bg-light py-5">
                 <div className="container mx-auto py-5 col-lg-10 col-xl-9">
-                    <div className="mb-5">
-                        <h1 className="mb-1">Return & Refund Policy</h1><br />
-                        <p >Regards for your business with "Santsai Corporation". We are available to assist you if you are not completely satisfied with your services.</p>
-
-                        <h3 className="mb-1">Service Cancellations</h3><p>After the date of purchase, you have five calendar days to terminate your service subscription. Service subscription cancellations will only be accepted if the request is submitted within five days of the subscription's start date. In order to cancel, you must send a written notice via email to info@santcorporation.com along with a legitimate reason and supporting documentation, along with a receipt or other proof of purchase.
-
-
-                        </p><h3 className="mb-1">Refunds</h3><p>Depending on the services, 10% or more of the total will be withheld from service subscription payments; the remaining balance will be reimbursed if the cancellation is requested within five days of the subscription start date. Refund requests must be accompanied by a formal email to info@santcorporation.com that includes supporting documentation for the particular circumstance.
-Following the five days, there won't be any refunds. A refund will be credited to your credit card (or the original payment method) if your request to cancel your service is accepted. The credit will be issued to you in 5-7 business days, based on the policies of your card issuer.
-
-                        </p><br /><br />
-                        <h3 className="mb-1">Contact Us</h3><br />
-                        <p >Please email us at info@santcorporation.com if you have any questions or suggestions.
+                    <div className="mb-5 text-dark">
+                        <h1 className="mb-3 text-primary">Return & Refund Policy</h1>
+                        <p className="lead">
+                            Thank you for doing business with <strong>Santsai Corporation</strong>. We are committed to providing excellent service and are here to assist if you are not completely satisfied.
                         </p>
-                        <p>Email id here: info@santcorporation.com</p>
-                        <p>Contact Number here : +91-8805587310/ 0657-3568866</p>
-                        <p>Address : H. No. 75, River View Colony Anil Main Road,Uliyan Kadma, Jamshedpur, Jharkhand 831005
+
+                        <h3 className="mt-4 text-secondary">Service Cancellations</h3>
+                        <p>
+                            You have <strong>five calendar days</strong> from the date of purchase to terminate your service subscription. Cancellation requests will only be accepted within this timeframe. To cancel, please send a written notice via email to <a href="mailto:info@santcorporation.com" className="text-primary">info@santcorporation.com</a> with a valid reason, supporting documentation, and proof of purchase.
                         </p>
+
+                        <h3 className="mt-4 text-secondary">Refunds</h3>
+                        <p>
+                            For cancellations within five days of the subscription start date, a refund will be issued after deducting 10% or more of the total service fee, depending on the service. Refund requests must include a formal email with supporting documentation sent to <a href="mailto:info@santcorporation.com" className="text-primary">info@santcorporation.com</a>. Refunds will be credited to the original payment method within 5-7 business days, subject to your card issuer's policies.
+                        </p>
+                        <p className="text-danger fw-bold">
+                            Note: No refunds will be issued after the five-day period.
+                        </p>
+
+                        <h3 className="mt-4 text-secondary">Contact Us</h3>
+                        <p>
+                            If you have any questions or suggestions, feel free to contact us:
+                        </p>
+                        <ul className="list-unstyled">
+                            <li>
+                                <strong>Email:</strong> <a href="mailto:info@santcorporation.com" className="text-primary">info@santcorporation.com</a>
+                            </li>
+                            <li>
+                                <strong>Phone:</strong> +91-8805587310 / 0657-3568866
+                            </li>
+                            <li>
+                                <strong>Address:</strong> H. No. 75, River View Colony, Anil Main Road, Uliyan Kadma, Jamshedpur, Jharkhand 831005
+                            </li>
+                        </ul>
                     </div>
-                    <p></p>
                 </div>
             </section>
-
-
         </>
     );
 };

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "#2C3E50", padding: "30px 0", color: "#FFFFFF" }}>
+    <footer style={{ backgroundColor: "#2C3E50", padding: "20px 10px", color: "#FFFFFF" }}>
       {/* Highlighted tagline */}
       <div className="container text-center mb-3">
         <motion.div
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="container text-center mb-4">
+      <div className="container text-center contact-info">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: [0, -10, 0] }}
@@ -43,30 +43,26 @@ const Footer = () => {
             We appreciate you choosing to contact us.
           </p>
         </motion.div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "10px" }}>
+        <div>
           <motion.span whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
             <MobileIcon fontSize="medium" style={{ color: "#FFD700" }} />
           </motion.span>
-          <span style={{ fontSize: "1rem" }}>+91-8805587310 / 0657-3568866</span>
+          <span style={{ fontSize: "1rem", margin: "0 5px" }}>+91-8805587310 / 0657-3568866</span>
           <motion.span whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
             <EmailIcon fontSize="medium" style={{ color: "#FFD700" }} />
           </motion.span>
-          <span style={{ fontSize: "1rem" }}>ratannarayan@santcorporation.com</span>
+          <span style={{ fontSize: "1rem", margin: "0 5px" }}>ratannarayan@santcorporation.com</span>
         </div>
       </div>
 
       {/* Address Section */}
       <div className="container text-center mb-4">
-        <div>
-          <motion.span whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
-            <LocationOnIcon fontSize="medium" style={{ color: "#FFD700" }} />
-          </motion.span>
-          <span style={{ fontSize: "1rem", marginLeft: "10px" }}>
-            H. No. 75, River View Colony
-Anil Main Road, Uliyan Kadma,
-Jamshedpur, Jharkhand 831005
-          </span>
-        </div>
+        <motion.span whileHover={{ scale: 1.2 }} transition={{ type: "spring", stiffness: 300 }}>
+          <LocationOnIcon fontSize="medium" style={{ color: "#FFD700" }} />
+        </motion.span>
+        <span style={{ fontSize: "1rem", marginLeft: "10px" }}>
+          H. No. 75, River View Colony Anil Main Road, Uliyan Kadma, Jamshedpur, Jharkhand 831005
+        </span>
       </div>
 
       {/* Links */}
@@ -87,7 +83,7 @@ Jamshedpur, Jharkhand 831005
       </div>
 
       {/* Social Media Links */}
-      <div className="container text-center mb-4">
+      <div className="container text-center social-icons mb-4">
         <motion.a
           href="https://www.facebook.com"
           target="_blank"

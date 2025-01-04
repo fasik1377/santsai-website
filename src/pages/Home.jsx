@@ -42,21 +42,23 @@ const Home = () => {
 	return (
 		<><section
   className="sec"
-  style={{ height: "100vh", overflow: "hidden" }}
+  style={{ height: "100vh", overflow: "hidden", position: "relative" }}
 >
+  {/* Background Gradient */}
   <div
     className="animated-background"
     style={{
       position: "absolute",
       width: "100%",
       height: "100%",
-      background: "linear-gradient(135deg, #8B0000, white, black)",
+      background: "linear-gradient(135deg, white, #f0f0f0, #e0e0e0)",
       animation: "backgroundAnimation 10s infinite alternate",
       zIndex: -1,
     }}
   ></div>
 
-  {/* */}<div
+  {/* Floating Technology Icons */}
+  <div
     className="technology-animation"
     style={{
       position: "absolute",
@@ -85,9 +87,9 @@ const Home = () => {
         className="tech-icon"
         style={{
           position: "absolute",
-          width: "70px",
-          height: "70px",
-          animation: `moveTech ${Math.random() * 10 + 5}s linear infinite`,
+          width: "50px",
+          height: "50px",
+          animation: `moveTech ${Math.random() * 15 + 5}s linear infinite`,
           top: `${Math.random() * 100}%`,
           left: `${Math.random() * 100}%`,
         }}
@@ -95,6 +97,7 @@ const Home = () => {
     ))}
   </div>
 
+  {/* Main Content */}
   <div
     className="container"
     style={{
@@ -103,39 +106,50 @@ const Home = () => {
       justifyContent: "center",
       alignItems: "center",
       height: "100%",
-      color: "#fff",
       textAlign: "center",
     }}
   >
-   {/* <h1
+    <h1
       className="animated-text"
       style={{
         fontSize: "3rem",
         fontWeight: "bold",
         margin: 0,
         animation: "textAnimation 3s infinite",
+        color: "#333",
       }}
     >
       Santsai Corporation
-    </h1>*/} 
-    {/*    <p
+    </h1>
+    <p
       style={{
         fontSize: "1.5rem",
         margin: "1rem 0",
         animation: "fadeIn 5s infinite",
+        color: "#666",
       }}
     >
       Your Tech Partner
-    </p> */}
-
+    </p>
+    {/* Huge AI/Robot Image */}
+    <img
+      src="/images/under_construction.png" // Replace with the correct path to your robot/AI image
+      alt="AI Robot"
+      style={{
+        maxWidth: "60%",
+        height: "auto",
+        marginTop: "2rem",
+        borderRadius: "10px"
+      }}
+    />
   </div>
 
-  {/* Add CSS animations */}
+  {/* CSS Animations */}
   <style>{`
     @keyframes backgroundAnimation {
-      0% { background: linear-gradient(135deg, #8B0000, white, black); }
-      50% { background: linear-gradient(135deg, white, black, #8B0000); }
-      100% { background: linear-gradient(135deg, black, #8B0000, white); }
+      0% { background: linear-gradient(135deg, white, #f0f0f0, #e0e0e0); }
+      50% { background: linear-gradient(135deg, #f0f0f0, white, #d0d0d0); }
+      100% { background: linear-gradient(135deg, #e0e0e0, #f0f0f0, white); }
     }
 
     @keyframes textAnimation {
@@ -158,11 +172,13 @@ const Home = () => {
       width: 50px;
       height: 50px;
       opacity: 0.8;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       animation-timing-function: ease-in-out;
     }
   `}</style>
 </section>
+
+
 
 
 
