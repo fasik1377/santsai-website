@@ -178,10 +178,6 @@ const Home = () => {
   `}</style>
 </section>
 
-
-
-
-
 <section 
   className="text-center position-relative" 
   style={{
